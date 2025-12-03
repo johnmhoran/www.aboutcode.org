@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'AboutCode',
+  tagline: '. . .',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,15 +20,22 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  //   url: 'https://your-docusaurus-site.example.com',
+  //   // Set the /<baseUrl>/ pathname under which your site is served
+  //   // For GitHub pages deployment, it is often '/<projectName>/'
+  //   baseUrl: '/',
+
+  //   For the fork:
+  url: 'https://johnmhoran.github.io',
+  baseUrl: '/www.aboutcode.org/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+//   organizationName: 'facebook', // Usually your GitHub org/user name.
+//   projectName: 'docusaurus', // Usually your repo name.
+
+  organizationName: 'johnmhoran',
+  projectName: 'www.aboutcode.org',
 
   onBrokenLinks: 'throw',
 
