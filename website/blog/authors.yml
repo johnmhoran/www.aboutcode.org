@@ -1,6 +1,6 @@
 dmclark:
   name: Dennis Clark
-  title: (title)
+  title: Product Manager
   url: https://www.linkedin.com/in/dennis-clark-03b6a6264/
   image_url: https://avatars.githubusercontent.com/u/4991620?v=4
   page: true
@@ -10,7 +10,7 @@ dmclark:
 
 mjherzog:
   name: Michael Herzog
-  title: (title)
+  title: CEO, nexB Inc.
   url: https://www.linkedin.com/in/michael-herzog-3a350
   image_url: https://avatars.githubusercontent.com/u/4853767?v=4
   page: true
@@ -20,7 +20,7 @@ mjherzog:
 
 pombredanne:
   name: Philippe Ombredanne
-  title: (title)
+  title: AboutCode Lead Maintainer
   url: https://www.linkedin.com/in/philippeombredanne
   image_url: https://avatars.githubusercontent.com/u/675997?v=4
   page: true

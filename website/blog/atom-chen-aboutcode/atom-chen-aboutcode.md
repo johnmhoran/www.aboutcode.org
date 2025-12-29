@@ -9,15 +9,17 @@ hide_table_of_contents: false
 ![apprhreat-image](atom_grey-1024x683.png)
 
 
-**atom** and **chen**, two open source tools for high-quality code analysis 
-built by the **AppThreat** team, are now part of the non-profit **AboutCode** organization committed to making open source easier and safer to use by 
-building critical open source tools for Software Composition Analysis (SCA) 
-and beyond.
+[atom](https://github.com/AppThreat/atom) and [chen](https://github.com/AppThreat/chen), 
+two open source tools for high-quality code analysis built by the [AppThreat](https://www.appthreat.com/) team, are now part of the non-profit [AboutCode](https://aboutcode.org/) 
+organization committed to making open source easier and safer 
+to use by building critical open source tools for Software Composition 
+Analysis (SCA) and beyond.
 
 “AppThreat started with the simple mission to make high-quality code analysis 
-and security tools for everyone,” says **Prabhu Subramanian**, lead maintainer
- of atom and chen, founder of AppThreat, and creator of other open source 
- supply chain security tools like [OWASP CycloneDX Generator (cdxgen)](https://github.com/CycloneDX/cdxgen), [OWASP blint](https://github.com/owasp-dep-scan/blint), and [OWASP depscan](https://owasp.org/www-project-dep-scan/).
+and security tools for everyone,” says [Prabhu Subramanian](https://github.com/prabhu), 
+lead maintainer of atom and chen, founder of AppThreat, and creator of other 
+open source  supply chain security tools like [OWASP CycloneDX Generator (cdxgen)](https://github.com/CycloneDX/cdxgen), [OWASP blint](https://github.com/owasp-dep-scan/blint), and
+ [OWASP depscan](https://owasp.org/www-project-dep-scan/).
 
 While working on a different problem, Prabhu uncovered a lack of high-quality 
 code hierarchy analysis libraries and CLI tools. atom and chen were built as 
