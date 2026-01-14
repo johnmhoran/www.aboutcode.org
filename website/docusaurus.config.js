@@ -104,27 +104,9 @@ const config = {
                     { to: '/', label: 'Home', position: 'left', exact: true },
                     {
                         type: 'docSidebar',
-                        sidebarId: 'scancode',
+                        sidebarId: 'getting_started',
                         position: 'left',
-                        label: 'ScanCode',
-                    },
-                    {
-                        type: 'docSidebar',
-                        sidebarId: 'vulnerablecode',
-                        position: 'left',
-                        label: 'VulnerableCode',
-                    },
-                    {
-                        type: 'docSidebar',
-                        sidebarId: 'purldb',
-                        position: 'left',
-                        label: 'PURL-DB',
-                    },
-                    {
-                        type: 'docSidebar',
-                        sidebarId: 'dejacode',
-                        position: 'left',
-                        label: 'DejaCode',
+                        label: 'Getting Started',
                     },
                     {
                         type: 'docSidebar',
