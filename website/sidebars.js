@@ -6,14 +6,15 @@ const sidebars = {
   // But you can create a sidebar manually
 
     about: [
-        'about/about-aboutcode-foundation',
         'about/about-contribute',
-        'about/about-resources',
-        'about/about-news',
         'about/about-events',
-        'about/about-history',
+        'about/about-meetings',
+        'about/about-news',
+        'about/about-releases',
+        'about/about-resources',
     ],
     getting_started: [
+        'getting_started/getting_started-getting-started',
         'getting_started/getting_started-software-identification',
         'getting_started/getting_started-security',
         'getting_started/getting_started-compliance',
