@@ -5,6 +5,8 @@ import projects_scancode from '@site/src/data/projects-scancode.json';
 import projects_package_url from '@site/src/data/projects-package-url.json';
 import projects_inspectors from '@site/src/data/projects-inspectors.json';
 import projects_libraries from '@site/src/data/projects-libraries.json';
+import field_help from '@site/src/data/field_help.json';
+// import { createPortal } from 'react-dom';
 
 export default function ProjectGrids() {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -71,7 +73,7 @@ export default function ProjectGrids() {
         };
     }, [selectedProject]);
 
-    // Add tooltip to card and modal.
+    // Add tooltip to card and modal.  Uses .tooltip class, on which I based .field_tooltip class as well.
     function DescriptionWithTooltip({ text }) {
         const descRef = React.useRef(null);
         const [showTooltip, setShowTooltip] = React.useState(false);
@@ -99,6 +101,99 @@ export default function ProjectGrids() {
             </div>
         );
     }
+
+    // Tooltips become transparent when extending over adjacent card -- remove field tooltip from card DOM.
+    // Just added 'import { createPortal } from 'react-dom';' above for this.
+    // function TooltipPortal({ children }) {
+    //     return createPortal(children, document.body);
+    // }
+
+    // Add a field tooltip, with content provided from a .json file.  Uses .field_tooltip class, based on .tooltip class.
+    function HoverTooltip({ children, tooltip }) {
+        const [showTooltip, setShowTooltip] = React.useState(false);
+
+        return (
+            <span
+                className={styles.projectDescriptionWrapper}
+                onMouseEnter={() => setShowTooltip(true)}
+                onMouseLeave={() => setShowTooltip(false)}
+            >
+                {children}
+                {showTooltip && (
+                    <div className={styles.field_tooltip}>{tooltip}</div>
+                )}
+                {/* {showTooltip && (
+                    <TooltipPortal>
+                        <div className={styles.field_tooltip}>{tooltip}</div>
+                    </TooltipPortal>
+                )} */}
+            </span>
+        );
+    }
+
+    // function FieldLabel({ label, help }) {
+    //     return (
+    //         <span style={{ fontWeight: 'normal' }}>
+    //             {label}
+    //             {help && (
+    //                 <HoverTooltip tooltip={help}>
+    //                     <img
+
+    //                         src='./img/help.svg'
+    //                         alt={`${label} help`}
+    //                         className={styles.helpIcon}
+    //                     />
+    //                 </HoverTooltip>
+    //             )}
+    //             :
+    //         </span>
+    //     );
+    // }
+
+    // function FieldLabel({ label, help }) {
+    //     return (
+    //         <span style={{ fontWeight: 'normal' }}>
+    //             <span className={styles.fieldLabel}>
+    //                 {label}
+    //             </span>
+    //             <HoverTooltip tooltip={field_help.platform}>
+    //                 <img
+    //                     src='./img/help.svg'
+    //                     alt='help'
+    //                     className={styles.helpIcon}
+    //                 />
+    //             </HoverTooltip>
+    //             <span className={styles.fieldColon}>:</span>
+    //         </span>
+    //     );
+    // }
+
+    // 2026-01-20 Tuesday 15:09:40.  Revise -- and rename to distinguish from the CSS fieldLabel style -- the prior effort:
+    function FieldLabelHelp({ label, help }) {
+        if (!help) {
+            return <span className={styles.fieldLabel}>{label}:</span>;
+        }
+
+        return (
+            <span className={styles.fieldLabelWrapper}>
+                <span className={styles.fieldLabel}>{label}</span>
+
+                <span className={styles.helpIconWrapper}>
+                    <HoverTooltip tooltip={help}>
+                        <img
+                            src='./img/help.svg'
+                            alt={`${label} help`}
+                            className={styles.helpIcon}
+                        />
+                    </HoverTooltip>
+                </span>
+
+                <span className={styles.fieldColon}>:&nbsp;</span>
+            </span>
+        );
+    }
+
+    // =====================================================================
 
     function normalizeToArray(value) {
         const INVALID_VALUES = new Set(['Not available', 'Not applicable']);
@@ -187,13 +282,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Documentation URL:{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelp
+                                                        label='Documentation URL'
+                                                        help={
+                                                            field_help.documentation_url
+                                                        }
+                                                    />
                                                     <a
                                                         href={
                                                             project.documentation_url
@@ -506,17 +607,75 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Platform:{' '}
-                                                    </span>
+                                                    </span> */}
+
+                                                    <FieldLabelHelp
+                                                        label='Platform'
+                                                        help={
+                                                            field_help.platform
+                                                        }
+                                                    />
+
                                                     {selectedProject.platform}
                                                 </div>
                                             )}
                                     </div>
+
+                                    {/* <div>
+                                        {selectedProject.platform &&
+                                            selectedProject.platform !==
+                                                'Not applicable' &&
+                                            selectedProject.platform !==
+                                                'Not available' && (
+                                                <div
+                                                    className={
+                                                        styles.modalLinks01
+                                                    }
+                                                >
+                                                    <span
+                                                        className={
+                                                            styles.fieldLabel
+                                                        }
+                                                    >
+                                                        Platform
+                                                        <span
+                                                            className={
+                                                                styles.tooltipWrapper
+                                                            }
+                                                        >
+                                                            <img
+                                                                src='./img/info.svg'
+                                                                alt='Platform help'
+                                                                className={
+                                                                    styles.helpIcon
+                                                                }
+                                                            />
+                                                            <span
+                                                                className={
+                                                                    styles.tooltip_field
+                                                                }
+                                                            >
+                                                                Platform
+                                                                describes the
+                                                                operating system
+                                                                or runtime
+                                                                environment this
+                                                                project is
+                                                                intended for.
+                                                            </span>
+                                                        </span>
+                                                        :
+                                                    </span>{' '}
+                                                    {selectedProject.platform}
+                                                </div>
+                                            )}
+                                    </div> */}
 
                                     <div>
                                         {selectedProject.software_license &&
@@ -579,6 +738,39 @@ export default function ProjectGrids() {
                                                     : ''}
                                                 :{' '}
                                             </span>
+                                            <ul
+                                                className={
+                                                    styles.maintainerList
+                                                }
+                                            >
+                                                {leadMaintainers.map(
+                                                    (url, idx) => (
+                                                        <li key={idx}>
+                                                            <a
+                                                                href={url}
+                                                                target='_blank'
+                                                                rel='noopener noreferrer'
+                                                                className={
+                                                                    styles.modalLinkUrl
+                                                                }
+                                                            >
+                                                                {url}
+                                                            </a>
+                                                        </li>
+                                                    ),
+                                                )}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                    {leadMaintainers.length > 0 && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelp
+                                                label='Lead Maintainer(s)'
+                                                help={
+                                                    field_help.lead_maintainer
+                                                }
+                                            />
                                             <ul
                                                 className={
                                                     styles.maintainerList

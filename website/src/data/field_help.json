@@ -1,0 +1,11 @@
+{
+    "repository_url": "x",
+    "package_download_url": "x",
+    "documentation_url": "Documentation URL -- coming soon.",
+    "service_url": "x",
+    "languages": "x",
+    "platform": "The operating system or runtime environment this project targets.",
+    "software_license": "The software license governing use and redistribution.",
+    "data_license": "x",
+    "lead_maintainer": "Primary individual(s) responsible for maintaining the project."
+}

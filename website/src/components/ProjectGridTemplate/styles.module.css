@@ -352,8 +352,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 8;
-    line-clamp: 8;
+    /* -webkit-line-clamp: 8; */
+    /* line-clamp: 8; */
+
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+
     -webkit-box-orient: vertical;
     cursor: default;
 }
@@ -410,6 +414,201 @@
     color: #f0f0f0;
     border: solid 2px #505050;
 }
+
+/* ======================================================================== */
+/* 2026-01-20 Tuesday 11:56:12.  Field tooltip */
+
+.fieldLabelWrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    gap: 0px;
+}
+
+.fieldLabel {
+  font-weight: bold;
+}
+
+.fieldColon {
+    font-weight: normal;
+}
+
+/* .tooltipWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  margin-left: 0px;
+} */
+
+.helpIconWrapper {
+    display: inline-flex;
+    align-items: center;
+    cursor: help;
+}
+
+/* .helpIcon {
+  width: 14px;
+  height: 14px;
+  cursor: help;
+  color: var(--ifm-color-emphasis-500);
+  color: #ff0000;
+} */
+
+.helpIcon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.75;
+}
+.helpIcon:hover {
+    opacity: 1;
+}
+
+/* .tooltip_field {
+  position: absolute;
+  bottom: 125%;
+
+  left: 0;
+  transform: none;
+
+  background-color: var(--ifm-background-color);
+  background-color: #ffffff;
+
+  color: var(--ifm-font-color-base);
+  color: #000000;
+
+
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border: 1px solid #cccccc;
+
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  white-space: normal;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1000;
+
+
+    line-height: 1.25em;
+    font-size: 1rem;
+    font-weight: normal;
+} */
+
+/* .tooltipWrapper:hover .tooltip_field {
+  opacity: 1;
+  visibility: visible;
+} */
+
+/* ======================================================================== */
+/* 2026-01-20 Tuesday 13:05:37.Instead of the field tooltip just above,
+try this, based on the existing tooltip but adjusted so it doesn't disappear
+off to the left. */
+
+/* .field_tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(40, 40, 40, 0.95) transparent transparent transparent;
+} */
+
+.field_tooltip_2026_01_20 {
+    position: absolute;
+    bottom: 100%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+
+  /* left: 0;
+  transform: none; */
+
+    background: #ffffff;
+    /* background: #000000; */
+    background: red !important;
+    isolation: isolate;
+
+    color: #000000;
+    /* color: #ffffff; */
+
+    border: solid 2px #0066ff;
+    padding: 8px 10px 0px 10px;
+    padding: 8px 10px 8px 10px;
+
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    white-space: normal;
+    width: max-content;
+    max-width: 420px;
+    z-index: 10;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    line-height: 1.25em;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    word-break: normal;
+
+    /* Address the transparent-over-adjacent-card issue. */
+    left: 0;
+    right: 0;
+    max-width: 100%;
+}
+
+/* Fix width issues in above conflicting layout models. */
+.field_tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #0066ff;
+    padding: 8px 10px;
+    border-radius: 6px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    white-space: normal;
+
+    /* 🔑 KEY CHANGE */
+    width: auto;
+    min-width: 220px;
+    max-width: 420px;
+
+    z-index: 10;
+    opacity: 1;
+
+    line-height: 1.25em;
+    font-size: 1rem;
+    font-size: .9rem;
+    overflow-wrap: break-word;
+}
+
+/* wider for tooltips inside the wider modal. */
+
+.modalBody .field_tooltip {
+    max-width: 720px;
+}
+
+
+.projectDescriptionWrapper:hover .field_tooltip {
+    opacity: 1;
+}
+[data-theme='dark'] .field_tooltip {
+    background: #282828;
+    color: #f0f0f0;
+    border: solid 2px #505050;
+}
+
+/* ======================================================================== */
 
 .packageDownloadWrapper {
     position: relative;
