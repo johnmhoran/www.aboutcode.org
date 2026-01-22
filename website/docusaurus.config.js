@@ -157,7 +157,7 @@ const config = {
                     { label: 'Privacy Policy', to: '/privacy' },
                     { label: 'Terms of Service', to: '/terms' },
                 ],
-                copyright: `Copyright AboutCode Europe ASBL. &nbsp; All rights reserved. &nbsp; Built with Docusaurus.`,
+                copyright: `Copyright AboutCode Europe ASBL. &nbsp; Content licensed under CC-BY-SA-4.0. &nbsp; Built with Docusaurus.`,
             },
             prism: {
                 theme: prismThemes.github,
