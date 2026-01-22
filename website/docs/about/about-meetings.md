@@ -15,7 +15,7 @@ Join our community meetings to discuss AboutCode projects, ask questions, and co
 *   **Where**: https://meet.jit.si/AboutCode
 
 ## Bi-weekly PURL Community Meeting
-*   **When**: Wednesdays at 15:00 UTC - every two weeks starting January 7
+*   **When**: Wednesdays at 17:00 UTC - every two weeks starting January 7
 *   **Topic**: Discussion of the [PURL](https://github.com/package-url/purl-spec)
 and [VERS](https://github.com/package-url/vers-spec) specifications and 
 related projects
