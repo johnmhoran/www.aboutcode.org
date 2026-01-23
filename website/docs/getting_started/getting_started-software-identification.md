@@ -14,6 +14,8 @@ Platform Enumeration) and SWID (SoftWare IDentification). Neither has been
 successful and neither was suitable for open source software which now 
 represents approximately 80% of software in use according to most surveys.
 
+## Package-URL
+
 The AboutCode team identified this problem in 2018 in the context of working
 on our ScanCode and VulnerableCode projects. The solution was and is the PURL (Package-URL) specification which has become the most widely used software
 identifier for open source software. PURL is now an Ecma standard - [ECMA-427](https://ecma-tc54.github.io/ECMA-427/), and it is on a fast track to become 
@@ -26,6 +28,10 @@ version that you use? Our solution is the VERS (VErsion Range Specifier)
 specification which will be submitted to Ecma as a standard in 2026.
 
 See the [Package-URL website](https://package-url.github.io/www.packageurl.org/) for more information about PURL and VERS.
+
+See the Package-URL (PURL) projects section of the Home page for more 
+information about AboutCode tools that provide PURL- and VERS-specific 
+capabilities.
 
 ## Identify software packages and components
 For the basic use case of identifying software packages and components, 
@@ -76,7 +82,7 @@ Dependencies (from package manifest files). The scan data also includes
 detailed information about image layers and their file content.
 
     If you conclude that the ScanCode.io inventory is accurate, you can 
-    export the data CycloneDX or SPDX SBOM format, or in JSON or XLSX format
+    export the data in CycloneDX or SPDX SBOM format, or in JSON or XLSX format
     for use in another application. 
 
     If you need to update or enhance the scan data before you produce an SBOM, DejaCode provides several options.
@@ -97,17 +103,54 @@ then:
 used in the ScanCode.io `analyze_docker_image` pipeline for the layer analysis,
 but you can also use it as a command line utility.
 
+## Consume or produce SBOMs
+The EU CRA (Cyber Resilience Act) and other regulatory initiatives have 
+dramatically raised the importance of SBOMs (Software Bills of Materials) for 
+compliance with security risk management laws and regulations. A key challenge in using SBOMs is the reliable identification of software packages so that someone else in your software supply chain (upstream or downstream) will recognize the same package identity. The PURL (Package-URL) standard [ECMA-427](https://ecma-tc54.github.io/ECMA-427/) provides the most popular solution.
 
-## Match binaries to sources
+**DejaCode** and **ScanCode.io** both provide full capabilities to import or export SBOMs in CycloneDX or SPDX format using PURL as the standard software 
+identifier.
 
+## Match binaries to source
+One of the most difficult software identification tasks is to match the "binary" files that you distribute or deploy (on a device or the cloud) to the corresponding "source" files from your development/build systems. In the 
+AboutCode community we consider binary-source matching to be a subset of the 
+much larger domain of matching "deploy" files to "devel" files. This matching challenge includes:
 
+- [ScanCode.io](https://scancodeio.readthedocs.io/en/latest/) supports "deploy-to-devel" matching with the `map_deploy_to_develop` pipeline.
+This pipeline currently handles:
 
+  - Matching Linux ELF, Windows, MacOS or Rust binaries to source
+  - Matching Go binaries to source
+  - Matching Java `jar` or `class` files to corresponding Java, Kotlin or 
+  Scala source files
+  - Matching minified JavaScript to corresponding TS or JS files
+  - And other use cases
+
+- [MatchCode Toolkit](https://github.com/aboutcode-org/matchcode-toolkit/blob/main/README.rst) is a Python library that provides the file and directory fingerprinting functionality for ScanCode Toolkit and ScanCode.io using
+the HaloHash algorithm. You can use the **MatchCode Toolkit** as a library.
+
+- ScanCode uses several AboutCode libraries to analyze "deploy" files 
+including:
+   - [binary-inspector](https://github.com/aboutcode-org/binary-inspector/blob/main/README.rst) extracts symbols from binaries in ELF, Mach-O, WinPe and
+   other formats
+   - [elf-inspector](https://github.com/aboutcode-org/elf-inspector/blob/main/README.rst) collects data from ELF binaries
+   - [go-inspector](https://github.com/aboutcode-org/go-inspector/blob/main/README.rst) extracts dependencies and symbols from Go binaries
+   - [rust-inspector](https://github.com/aboutcode-org/rust-inspector/blob/main/README.rst) extracts dependencies and symbols from Rust binaries
+   - [source-inspector]https://github.com/aboutcode-org/source-inspector/blob/main/README.rst() collects code symbols, strings and comments from source files
+
+   These are all Python utilities that can also be used independently.
 
 ## Identify software dependencies
-inspectors
+There are many use cases that include identification of package software 
+dependencies
+
+- ScanCode
+- dependency inspector
+- nuget-inspector
+- python-inspector
 
 
-## Consume or produce SBOMs
+
 
 
 
