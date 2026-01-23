@@ -102,14 +102,14 @@ export default function ProjectGrids() {
         );
     }
 
-    // Tooltips become transparent when extending over adjacent card -- remove field tooltip from card DOM.
-    // Just added 'import { createPortal } from 'react-dom';' above for this.
-    // function TooltipPortal({ children }) {
-    //     return createPortal(children, document.body);
-    // }
+    // ZZZ 2026-01-22 Thursday 14:56:42.  After much gnashing of teeth, and tests, to fix the field tooltips to display properly over both a card and a modal, I am creating a pair of several functions because regular CSS nesting appears not to work.
+    // rename HoverTooltip ==> HoverTooltipCard
+    // create HoverTooltipModal
+    // rename FieldLabelHelp ==> FieldLabelHelpCard
+    // create FieldLabelHelpModal
 
     // Add a field tooltip, with content provided from a .json file.  Uses .field_tooltip class, based on .tooltip class.
-    function HoverTooltip({ children, tooltip }) {
+    function HoverTooltipCard({ children, tooltip }) {
         const [showTooltip, setShowTooltip] = React.useState(false);
 
         return (
@@ -122,54 +122,32 @@ export default function ProjectGrids() {
                 {showTooltip && (
                     <div className={styles.field_tooltip}>{tooltip}</div>
                 )}
-                {/* {showTooltip && (
-                    <TooltipPortal>
-                        <div className={styles.field_tooltip}>{tooltip}</div>
-                    </TooltipPortal>
-                )} */}
             </span>
         );
     }
 
-    // function FieldLabel({ label, help }) {
-    //     return (
-    //         <span style={{ fontWeight: 'normal' }}>
-    //             {label}
-    //             {help && (
-    //                 <HoverTooltip tooltip={help}>
-    //                     <img
+    // 2026-01-22 Thursday 13:05:23.Nothing the bot suggests works so let's create this second version of HoverTooltip, which we'll name HoverTooltip_modal
+    function HoverTooltipModal({ children, tooltip }) {
+        const [showTooltip, setShowTooltip] = React.useState(false);
 
-    //                         src='./img/help.svg'
-    //                         alt={`${label} help`}
-    //                         className={styles.helpIcon}
-    //                     />
-    //                 </HoverTooltip>
-    //             )}
-    //             :
-    //         </span>
-    //     );
-    // }
-
-    // function FieldLabel({ label, help }) {
-    //     return (
-    //         <span style={{ fontWeight: 'normal' }}>
-    //             <span className={styles.fieldLabel}>
-    //                 {label}
-    //             </span>
-    //             <HoverTooltip tooltip={field_help.platform}>
-    //                 <img
-    //                     src='./img/help.svg'
-    //                     alt='help'
-    //                     className={styles.helpIcon}
-    //                 />
-    //             </HoverTooltip>
-    //             <span className={styles.fieldColon}>:</span>
-    //         </span>
-    //     );
-    // }
+        return (
+            <span
+                className={styles.projectDescriptionWrapper}
+                onMouseEnter={() => setShowTooltip(true)}
+                onMouseLeave={() => setShowTooltip(false)}
+            >
+                {children}
+                {showTooltip && (
+                    // <div className={`${styles.field_tooltip} ${styles.wide}`}>{tooltip}</div>
+                    // <div className={`${styles.field_tooltip_modal} ${styles.wide}`}>{tooltip}</div>
+                    <div className={styles.field_tooltip_modal}>{tooltip}</div>
+                )}
+            </span>
+        );
+    }
 
     // 2026-01-20 Tuesday 15:09:40.  Revise -- and rename to distinguish from the CSS fieldLabel style -- the prior effort:
-    function FieldLabelHelp({ label, help }) {
+    function FieldLabelHelpCard({ label, help }) {
         if (!help) {
             return <span className={styles.fieldLabel}>{label}:</span>;
         }
@@ -179,13 +157,20 @@ export default function ProjectGrids() {
                 <span className={styles.fieldLabel}>{label}</span>
 
                 <span className={styles.helpIconWrapper}>
-                    <HoverTooltip tooltip={help}>
+                    <HoverTooltipCard tooltip={help}>
                         <img
                             src='./img/help.svg'
                             alt={`${label} help`}
                             className={styles.helpIcon}
                         />
-                    </HoverTooltip>
+                    </HoverTooltipCard>
+                    {/* <HoverTooltipModal tooltip={help}>
+                        <img
+                            src='./img/help.svg'
+                            alt={`${label} help`}
+                            className={styles.helpIcon}
+                        />
+                    </HoverTooltipModal> */}
                 </span>
 
                 <span className={styles.fieldColon}>:&nbsp;</span>
@@ -193,7 +178,29 @@ export default function ProjectGrids() {
         );
     }
 
-    // =====================================================================
+    function FieldLabelHelpModal({ label, help }) {
+        if (!help) {
+            return <span className={styles.fieldLabel}>{label}:</span>;
+        }
+
+        return (
+            <span className={styles.fieldLabelWrapper}>
+                <span className={styles.fieldLabel}>{label}</span>
+
+                <span className={styles.helpIconWrapper}>
+                    <HoverTooltipModal tooltip={help}>
+                        <img
+                            src='./img/help.svg'
+                            alt={`${label} help`}
+                            className={styles.helpIcon}
+                        />
+                    </HoverTooltipModal>
+                </span>
+
+                <span className={styles.fieldColon}>:&nbsp;</span>
+            </span>
+        );
+    }
 
     function normalizeToArray(value) {
         const INVALID_VALUES = new Set(['Not available', 'Not applicable']);
@@ -289,7 +296,7 @@ export default function ProjectGrids() {
                                                     >
                                                         Documentation URL:{' '}
                                                     </span> */}
-                                                    <FieldLabelHelp
+                                                    <FieldLabelHelpCard
                                                         label='Documentation URL'
                                                         help={
                                                             field_help.documentation_url
@@ -327,13 +334,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Repository URL:{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelpCard
+                                                        label='Repository URL'
+                                                        help={
+                                                            field_help.repository_url
+                                                        }
+                                                    />
                                                     <a
                                                         href={
                                                             project.repository_url
@@ -364,13 +377,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Service URL:{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelpCard
+                                                        label='Service URL'
+                                                        help={
+                                                            field_help.service_url
+                                                        }
+                                                    />
                                                     <a
                                                         href={
                                                             project.service_url
@@ -433,13 +452,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Repository URL:{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelpModal
+                                                        label='Repository URL'
+                                                        help={
+                                                            field_help.repository_url
+                                                        }
+                                                    />
                                                     <a
                                                         href={
                                                             selectedProject.repository_url
@@ -463,7 +488,7 @@ export default function ProjectGrids() {
                                             <div
                                                 className={styles.modalLinks01}
                                             >
-                                                <span
+                                                {/* <span
                                                     style={{
                                                         fontWeight: 'bold',
                                                     }}
@@ -474,7 +499,13 @@ export default function ProjectGrids() {
                                                         ? 's'
                                                         : ''}
                                                     :{' '}
-                                                </span>
+                                                </span> */}
+                                                <FieldLabelHelpModal
+                                                    label='Package Download URL'
+                                                    help={
+                                                        field_help.package_download_url
+                                                    }
+                                                />
                                                 <ul
                                                     className={
                                                         styles.packageDownloadUrlList
@@ -512,13 +543,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Documentation URL:{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelpModal
+                                                        label='Documentation URL'
+                                                        help={
+                                                            field_help.documentation_url
+                                                        }
+                                                    />
                                                     <a
                                                         href={
                                                             selectedProject.documentation_url
@@ -548,13 +585,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Service URL:{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelpModal
+                                                        label='Service URL'
+                                                        help={
+                                                            field_help.service_url
+                                                        }
+                                                    />
                                                     <a
                                                         href={
                                                             selectedProject.service_url
@@ -584,13 +627,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Language(s):{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelpModal
+                                                        label='Language(s)'
+                                                        help={
+                                                            field_help.languages
+                                                        }
+                                                    />
                                                     {selectedProject.languages}
                                                 </div>
                                             )}
@@ -615,7 +664,7 @@ export default function ProjectGrids() {
                                                         Platform:{' '}
                                                     </span> */}
 
-                                                    <FieldLabelHelp
+                                                    <FieldLabelHelpModal
                                                         label='Platform'
                                                         help={
                                                             field_help.platform
@@ -626,56 +675,6 @@ export default function ProjectGrids() {
                                                 </div>
                                             )}
                                     </div>
-
-                                    {/* <div>
-                                        {selectedProject.platform &&
-                                            selectedProject.platform !==
-                                                'Not applicable' &&
-                                            selectedProject.platform !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <span
-                                                        className={
-                                                            styles.fieldLabel
-                                                        }
-                                                    >
-                                                        Platform
-                                                        <span
-                                                            className={
-                                                                styles.tooltipWrapper
-                                                            }
-                                                        >
-                                                            <img
-                                                                src='./img/info.svg'
-                                                                alt='Platform help'
-                                                                className={
-                                                                    styles.helpIcon
-                                                                }
-                                                            />
-                                                            <span
-                                                                className={
-                                                                    styles.tooltip_field
-                                                                }
-                                                            >
-                                                                Platform
-                                                                describes the
-                                                                operating system
-                                                                or runtime
-                                                                environment this
-                                                                project is
-                                                                intended for.
-                                                            </span>
-                                                        </span>
-                                                        :
-                                                    </span>{' '}
-                                                    {selectedProject.platform}
-                                                </div>
-                                            )}
-                                    </div> */}
 
                                     <div>
                                         {selectedProject.software_license &&
@@ -688,13 +687,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Software License:{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelpModal
+                                                        label='Software License'
+                                                        help={
+                                                            field_help.software_license
+                                                        }
+                                                    />
                                                     {
                                                         selectedProject.software_license
                                                     }
@@ -713,13 +718,19 @@ export default function ProjectGrids() {
                                                         styles.modalLinks01
                                                     }
                                                 >
-                                                    <span
+                                                    {/* <span
                                                         style={{
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
                                                         Data License:{' '}
-                                                    </span>
+                                                    </span> */}
+                                                    <FieldLabelHelpModal
+                                                        label='Data License'
+                                                        help={
+                                                            field_help.data_license
+                                                        }
+                                                    />
                                                     {
                                                         selectedProject.data_license
                                                     }
@@ -729,43 +740,7 @@ export default function ProjectGrids() {
 
                                     {leadMaintainers.length > 0 && (
                                         <div className={styles.modalLinks01}>
-                                            <span
-                                                style={{ fontWeight: 'bold' }}
-                                            >
-                                                Lead Maintainer
-                                                {leadMaintainers.length > 1
-                                                    ? 's'
-                                                    : ''}
-                                                :{' '}
-                                            </span>
-                                            <ul
-                                                className={
-                                                    styles.maintainerList
-                                                }
-                                            >
-                                                {leadMaintainers.map(
-                                                    (url, idx) => (
-                                                        <li key={idx}>
-                                                            <a
-                                                                href={url}
-                                                                target='_blank'
-                                                                rel='noopener noreferrer'
-                                                                className={
-                                                                    styles.modalLinkUrl
-                                                                }
-                                                            >
-                                                                {url}
-                                                            </a>
-                                                        </li>
-                                                    ),
-                                                )}
-                                            </ul>
-                                        </div>
-                                    )}
-
-                                    {leadMaintainers.length > 0 && (
-                                        <div className={styles.modalLinks01}>
-                                            <FieldLabelHelp
+                                            <FieldLabelHelpModal
                                                 label='Lead Maintainer(s)'
                                                 help={
                                                     field_help.lead_maintainer

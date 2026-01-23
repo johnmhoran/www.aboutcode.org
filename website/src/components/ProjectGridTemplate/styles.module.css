@@ -578,10 +578,44 @@ off to the left. */
 
     white-space: normal;
 
-    /* 🔑 KEY CHANGE */
     width: auto;
     min-width: 220px;
     max-width: 420px;
+    /* 2026-01-22 Thursday 13:27:09.try */
+    /* width: max-content; */
+
+    z-index: 10;
+    opacity: 1;
+
+    line-height: 1.25em;
+    font-size: 1rem;
+    font-size: .9rem;
+    overflow-wrap: break-word;
+}
+
+/* 2026-01-22 Thursday 15:11:43.Dupe but wide for the modal field tooltips */
+.field_tooltip_modal {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #0066ff;
+    padding: 8px 10px;
+    border-radius: 6px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    white-space: normal;
+
+    width: auto;
+    min-width: 220px;
+    max-width: 220px;
+
+    min-width: 250px;
+    max-width: 250px;
+
 
     z-index: 10;
     opacity: 1;
@@ -593,10 +627,33 @@ off to the left. */
 }
 
 /* wider for tooltips inside the wider modal. */
-
-.modalBody .field_tooltip {
+/* 2026-01-22 Thursday 12:37:07.This does not get applied. */
+/* .modalBody .field_tooltip {
     max-width: 720px;
+} */
+
+/* 2026-01-22 Thursday 12:37:33. Instead, try this and apply to a second function used only in  the modal. */
+/* also does not work */
+/* Modifier */
+.wide {
+    max-width: 800px;
+    /* try this to unseat the min-width of 220px set if .field_tooltip */
+    /* min-width: 500px; */
+    /* min-width: unset; */
 }
+
+/* 2026-01-22 Thursday 12:56:24.Try this. */
+.modalBody :global(.field_tooltip) {
+    max-width: 800px;
+}
+
+/* 2026-01-22 Thursday 13:01:39. */
+.tooltipWrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
 
 
 .projectDescriptionWrapper:hover .field_tooltip {
@@ -842,3 +899,9 @@ off to the left. */
 .packageDownloadUrlList {
     margin-bottom: 0px;
 }
+
+/* 2026-01-22 Thursday 16:04:16.Test using a Portal for the field tooltips */
+/* .projectCard,
+.modalBody {
+    position: relative;
+} */
