@@ -136,18 +136,24 @@ including:
    - [elf-inspector](https://github.com/aboutcode-org/elf-inspector/blob/main/README.rst) collects data from ELF binaries
    - [go-inspector](https://github.com/aboutcode-org/go-inspector/blob/main/README.rst) extracts dependencies and symbols from Go binaries
    - [rust-inspector](https://github.com/aboutcode-org/rust-inspector/blob/main/README.rst) extracts dependencies and symbols from Rust binaries
-   - [source-inspector]https://github.com/aboutcode-org/source-inspector/blob/main/README.rst() collects code symbols, strings and comments from source files
+   - [source-inspector](https://github.com/aboutcode-org/source-inspector/blob/main/README.rst) collects code symbols, strings and comments from source files
 
    These are all Python utilities that can also be used independently.
 
 ## Identify software dependencies
-There are many use cases that include identification of package software 
-dependencies
+There are many use cases that require the identification of package software 
+dependencies including:
+- Identifying the licenses and vulnerabilites from package dependencies before you select a software package to use it in your product or project.
+- Identifying package version dependencies before you upgrade a package.
+- Reporting package dependencies with their licenses or vulnerabilities in an SBOM or other document.
 
-- ScanCode
-- dependency inspector
-- nuget-inspector
-- python-inspector
+- **ScanCode Toolkit** and **ScanCode.io** both collect and report package
+dependency data from package manifest and dependency lock files (e.g., package.json or package-lock.json for npm. The reported package data includes the scope of a dependency and related attributes (runtime, optional, pinned, direct). 
+- [dependency inspector](https://github.com/aboutcode-org/dependency-inspector/blob/main/README.rst) is a command line tool to generate package lockfiles and parsable package manifests to make it easy to collect resolved dependencies 
+and accurate metadata for a project. It uses the standard package management tool for each package type or ecosystem.
+- [nuget-inspector](https://github.com/aboutcode-org/nuget-inspector/blob/main/README.rst) is a utility to resolve .NET or nuget package dependencies independently of a dotnet SDK installed on the computer used to run the **nuget-inspector**.
+- [python-inspector](https://github.com/aboutcode-org/python-inspector/blob/main/README.rst) is utility to resovlve PyPI package dependencies and query PyPI 
+to enrich package metadata.
 
 
 
