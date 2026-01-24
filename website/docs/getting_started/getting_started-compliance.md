@@ -1,11 +1,11 @@
 # Compliance
 
-**Identify licenses for software and for data**
+## Identify licenses for software and for data
 
-**Apply usage policies**
+## Apply license usage policies**
 
-**Generate SBOMs**
+## Produce SBOMs
 
-**Automate compliance**
+## Automate compliance
+
 - Generate compliance artifacts (e.g. attribution notices)
-

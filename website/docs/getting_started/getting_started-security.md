@@ -1,10 +1,12 @@
 # Security
 
-**Identify vulnerabilities**
+## Identify vulnerabilities
+- VERS
 
-**Triage vulnerabilities**
+## Triage vulnerabilities
+- Risk scoring
 
-**Manage risks with aggregated vuln data**
+## Manage risks with aggregated vuln data 
 
-**Report exploitability (VEX)**
+## Report exploitability with VEX 
 
