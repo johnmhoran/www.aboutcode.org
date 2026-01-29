@@ -8,7 +8,7 @@ hide_table_of_contents: false
 
 The ScanCode LicenseDB is all about identifying a wide variety of licenses that are actually found in software.
 
-![scancode-db-blog](scancode-db-blog.png)
+![ScanCode-LicenseDB-2026-01](ScanCode-LicenseDB-2026-01.png)
 
 New software licenses appear constantly (like mushrooms popping out of the ground after a heavy rain) and old nearly-forgotten ones are rediscovered when someone [scans a codebase](https://www.nexb.com/scancode/) that incorporates legacy code (like finding rare medieval manuscripts in the back shelves of a library). The [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/) precisely identifies and organizes licenses and their metadata so that multiple members of the software community can understand exactly which licenses are being referenced in project documentation.
 
