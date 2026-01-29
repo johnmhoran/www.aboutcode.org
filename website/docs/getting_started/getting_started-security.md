@@ -87,14 +87,14 @@ It is not clear which of these specifications will become primary, but they all 
 
 [DejaCode](https://dejacode.readthedocs.io/en/latest/) provides a Product 
 (inventory or SBOM) feature to record the essential VEX data such as:
-- Status; The current state of an occurrence of a vulnerability, after 
+- Status: The current state of an occurrence of a vulnerability, after 
 automated or manual analysis.
 - Justification: The rationale for why the impact analysis state was asserted.
 - Responses: Can Not Fix, Rollback, Update, Will Not Fix, Workaround Available
 - Reach: Whether the vulnerability is reachable in the context of a package in
  the product being analyzed.
 
-From **DejaCode** you can easily xport VEX information in CSAF, CycloneDX or 
+From **DejaCode** you can easily export VEX information in CSAF, CycloneDX or 
 OpenVEX format.
 
 

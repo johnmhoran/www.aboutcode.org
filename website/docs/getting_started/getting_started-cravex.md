@@ -16,7 +16,7 @@ assessments, security-by-design practices, and vulnerability management.
 - **Vulnerability Reporting**: Manufacturers are required to report any actively exploited vulnerabilities to the European Union Agency for Cybersecurity (ENISA) within 24 hours.
 - **Security Updates**: Manufacturers must provide timely and effective security updates to address vulnerabilities.
 - **Documentation**: Manufacturers must provide documentation and certification to demonstrate compliance with CRA requirements.
-- **Enforcement**: The CRA includes includes penalties for non-compliance.
+- **Enforcement**: The CRA includes penalties for non-compliance.
 
 The most challenging CRA requirements for most organizations are those for
 timely reporting and remediation of actively exploited vulnerabilities in a product. At a minimum this will require organizations to:
@@ -77,14 +77,14 @@ project
 It is not clear which of these specifications will become primary, but they all cover similar data.
 
 **DejaCode** provides a Product feature to record essential VEX data such as:
-- Status; The current state of an occurrence of a vulnerability, after 
+- Status: The current state of an occurrence of a vulnerability, after 
 automated or manual analysis.
 - Justification: The rationale for why the impact analysis state was asserted.
 - Responses: Can Not Fix, Rollback, Update, Will Not Fix, Workaround Available
 - Reach: Whether the vulnerability is reachable in the context of a package in
 the product being analyzed.
 
-You can easily xport VEX information from **DejaCode** in CSAF, CycloneDX or 
+You can easily export VEX information from **DejaCode** in CSAF, CycloneDX or 
 OpenVEX format.
 
 ## Integration with software development tools
