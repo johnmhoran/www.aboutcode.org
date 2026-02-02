@@ -105,7 +105,7 @@ detailed information about image layers and their file content.
     
 - [DejaCode](https://dejacode.readthedocs.io/en/latest/) is highly integrated
 with ScanCode so that you can easily import ScanCode scan data from ScanCode
-Tookit or ScanCode.io into DejaCode as a **Product**. In DejaCode, you can 
+Toolkit or ScanCode.io into DejaCode as a **Product**. In DejaCode, you can 
 then:
     
     - Enrich the package data from PURLDB
@@ -178,7 +178,7 @@ including:
 ## Identify software dependencies
 There are many use cases that require the identification of package software 
 dependencies including:
-  - Identifying the licenses and vulnerabilites from package dependencies 
+  - Identifying the licenses and vulnerabilities from package dependencies 
   before you select a software package to use it in your product or project.
    - Identifying package version dependencies before you upgrade a package.
    - Reporting package dependencies with their licenses or vulnerabilities in 
@@ -200,7 +200,7 @@ package type or ecosystem.
 is a utility to resolve .NET or nuget package dependencies independently of a 
 dotnet SDK installed on the computer used to run the **nuget-inspector**.
 - [python-inspector](https://github.com/aboutcode-org/python-inspector/blob/main/README.rst) 
-is a utility to resovlve PyPI package dependencies and query PyPI 
+is a utility to resolve PyPI package dependencies and query PyPI 
 to enrich package metadata.
 
 

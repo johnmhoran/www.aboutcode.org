@@ -1,8 +1,8 @@
 # Compliance
 Compliance with licenses for third-party software is a very broad topic which was historically separated into two distinct domains:
 - Licenses for commercial software products where a purchasing department or
-similar organization has the primary responsiblity for negotiating license 
-terms and conditions and an IT group has primary responsibility for tracking compliance with the license (e.g, number of seats, etc.). Commercial license
+similar organization has the primary responsibility for negotiating license 
+terms and conditions and an IT group has primary responsibility for tracking compliance with the license (e.g., number of seats, etc.). Commercial license
 agreements are private (although the supplier may make standard license 
 agreement text available publicly).
 - Licenses for open source software where anyone in an organization can 
@@ -24,12 +24,12 @@ use and report it in SBOMs and other documentation
 
 ## Identify licenses for software and for data
 The first task for license compliance is to identify and document all third-party software that you use - regardless of whether the usage is 
-internal- only or external to your organization. 
+internal-only or external to your organization. 
 
 ScanCode from AboutCode is the industry-leading software scanning tool
 and it is embedded in many open source SCA (Software Composition Analysis) projects including [FOSSology](https://www.fossology.org/) and [ORT](https://oss-review-toolkit.org/ort/). ScanCode is also embedded in many commercial 
 SCA products. There are three primary ScanCode projects:
-- [ScanCode Toolkit](https://scancode-toolkit.readthedocs.io/en/stable/) is a set of code scanning tools that detect the origin (copyrights, authors, URLs, etc.) and license for any type of sofware. It uses a robust set of rules to detect more than 2,400 licenses and also clues to partial license text. You can use the Toolkit as a library or command line utility.
+- [ScanCode Toolkit](https://scancode-toolkit.readthedocs.io/en/stable/) is a set of code scanning tools that detect the origin (copyrights, authors, URLs, etc.) and license for any type of software. It uses a robust set of rules to detect more than 2,400 licenses and also clues to partial license text. You can use the Toolkit as a library or command line utility.
 - [ScanCode.io](https://scancodeio.readthedocs.io/en/latest/) is an 
 application (Web UI and API) where you can run standard or custom pipelines to
 identify licenses, copyrights, packages, dependencies and vulnerabilities. It also has pipelines to match deployment "binaries" (compiled or interpreted) to 
@@ -71,7 +71,7 @@ vulnerability data.
 import, edit and export SBOMs in CycloneDX (versions 1.6, 1.5 or 1.4) or SPDX format (version 2.3). For CycloneDX you also have an option to export a 
 combined SBOM + VEX document. SBOM data are stored in **DejaCode** Products.
 A Product can be third-party or first-party (or second-party:customer). You
-can define a Product at any level - e.g. some may be at a component or assembly level. You can experiment with the Product/SBOM features with a free [DejaCode trial account](https://public.dejacode.com/account/register/)
+can define a Product at any level - e.g., some may be at a component or assembly level. You can experiment with the Product/SBOM features with a free [DejaCode trial account](https://public.dejacode.com/account/register/)
 - [ScanCode.io](https://scancodeio.readthedocs.io/en/latest/) provides 
 features to import and export SBOMs in CycloneDX (version 1.7, 1.6, 1.5 or 
 1.4) or SPDX format (version 2.3 or 2.2). You can use the `'load_sbom` 
