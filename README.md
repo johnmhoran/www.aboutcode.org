@@ -2,22 +2,26 @@
 
 ## Overview
 This is the repository for the AboutCode public website. It is based on [Docusaurus](https://docusaurus.io/docs).
-This website is currently in Alpha-pilot state with a primary focus on content over format.
-- Please do not submit pull requests unless you find an issue labelled as "good first issue".
-- If you do submit a pull request:
-   - DO NOT use CoPilot or other AI tools to create the PR or its content. AboutCode does not accept AI-generated PRs and dealing with them takes away valuable time for our core work.
-   - Do not include changes to the current project configuration - e.g., do not include an updated package-lock.json or yarn.lock with a PR.
-   - Do not add new dependencies with your PR.
-
-The current draft website is available at: https://aboutcode-org.github.io/www.aboutcode.org/.
-
-## Simplified website structure
+This website is currently in a Beta phase with a primary focus on content over format.
 
 We value contributions from members of the community.  You can always suggest a new feature or a change to some existing element of the website by opening an issue and, if you're ready, a PR.
+- The normal process for suggesting changes is to create an issue to explain the change before creating a pull request.
+   - When you create an issue for the website please prefix the issue title with "WWW" and apply the label "website".
+   - The "WWW" prefix in the title is to make it easy to distinguish an issue from "DOC" issues which are about more general documentation and "POST" issues which are ideas for blog posts.
+   - The "website" label is to ensure that your issue and activity around it will show up in the AboutCode Slack channel "www-aboutcode-org".
+- If you do submit a pull request (PR):
+   - DO not use CoPilot or other AI tools to create the PR or its content. AboutCode does not accept AI-generated PRs and dealing with them takes away valuable time for our core work.
+   - Do not include changes to the current project configuration - e.g., do not include an updated package-lock.json or yarn.lock with a PR.
+   - Do not add new dependencies with your PR.
+- It is OK to directly submit a PR to fix typos and other minor corrections.
 
-In addition, the .md files that make up a majority of the website pages have an "Edit this page" link through which you can use the GitHub UI to add a commit or create a new branch and PR.  We've also added a similar edit link to the blog post .md files.
+The latest website is published at: https://aboutcode-org.github.io/www.aboutcode.org/.
 
-Several elements of the website -- including the navbar, the footer, the sidebars, the landing page, and the blog's authors.yml and tags.yml files -- are not directly editable but are ideal candidates for changes proposed through a new issue/PR.
+## Simplified website structure
+This section documents the website structure which necessarily follows a Docusaurus template and configuration. There are two primary ways to update the website:
+- Many elements of the website -- including the navbar, the footer, the sidebars, the landing page, and the blog's authors.yml and tags.yml files -- are complex to update. In most cases you should create an issue and the core team will need to create the PR or help you create one.
+- Most of the primary website content (including the blog posts) is composed of markdown files which are much easier to update. For these pages you will see an "Edit this page" link at the bottom of the text. You can use this link to go directly to the corresponding markdown file in this repository where you can use the GitHub UI to create a new branch and PR or you can create a branch and PR locally in your preferred GitHub tools.
+
 
 ![www.aboutcode.org navbar](./website/static/img/www-aboutcode-org-navbar-2026-02-05.png)
 
