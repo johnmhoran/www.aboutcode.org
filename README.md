@@ -48,8 +48,7 @@ Looking at the links in the website's navbar (defined in `../website/docusaurus.
   - **link**: a group of .md pages organized around a sidebar nav
   - **edit**: each .md has an `Edit this page` link in the lower-left corner of the page
   - **structure**:
-    - *Getting started*: `../website/docs/getting_started/getting_started-compliance.md`
-    - `../website/docs/getting_started/getting_started-getting-started.md`
+    - *Getting started*: `../website/docs/getting_started/getting_started-getting-started.md`
     - *Software identification*: `../website/docs/getting_started/getting_started-software-identification.md`
     - *Security*: `../website/docs/getting_started/getting_started-security.md`
     - *Compliance*: `../website/docs/getting_started/getting_started-compliance.md`
