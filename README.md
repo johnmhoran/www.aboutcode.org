@@ -1,7 +1,7 @@
 # www.aboutcode.org
 
 ## Overview
-This is the repository for the AboutCode public website. It is based on Docusaurus.
+This is the repository for the AboutCode public website. It is based on [Docusaurus](https://docusaurus.io/docs).
 This website is currently in Alpha-pilot state with a primary focus on content over format.
 - Please do not submit pull requests unless you find an issue labelled as "good first issue".
 - If you do submit a pull request:
@@ -24,6 +24,9 @@ Several elements of the website -- including the navbar, the footer, the sidebar
 Looking at the links in the website's navbar (defined in `../website/docusaurus.config.js`) ^:
 
 - **AboutCode logo**
+  - **link**: website Home (landing page)
+
+- **Home**
   - **link**: website landing page
   - **edit**: submit an issue
   - **structure**: website landing page is defined with a series of nested index.js, .css and other files, e.g.:
@@ -39,10 +42,6 @@ Looking at the links in the website's navbar (defined in `../website/docusaurus.
                 - *Inspectors*: `../website/src/data/projects-inspectors.json`
                 - *Libraries*: `../website/src/data/projects-libraries.json`
             - *Supporters*: `../website/src/components/HomepageContent/Supporters.md`
-
-
-- **Home**
-  - same as **AboutCode logo** above
 
 - **Getting Started**
   - **link**: a group of .md pages organized around a sidebar nav
