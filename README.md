@@ -13,6 +13,12 @@ The current draft website is available at: https://aboutcode-org.github.io/www.a
 
 ## Simplified website structure
 
+We value contributions from members of the community.  You can always suggest a new feature or a change to some existing element of the website by opening an issue and, if you're ready, a PR.
+
+In addition, the .md files that make up a majority of the website pages have an "Edit this page" link through which you can use the GitHub UI to add a commit or create a new branch and PR.  We've also added a similar edit link to the blog post .md files.
+
+Several elements of the website -- including the navbar, the footer, the sidebars, the landing page, and the blog's authors.yml and tags.yml files -- are not directly editable but are ideal candidates for changes proposed through a new issue/PR.
+
 ![www.aboutcode.org navbar](./website/static/img/www-aboutcode-org-navbar-2026-02-05.png)
 
 Looking at the links in the website's navbar (defined in `../website/docusaurus.config.js`) ^:
