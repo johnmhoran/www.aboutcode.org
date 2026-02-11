@@ -56,7 +56,9 @@
     padding: 1rem;
     text-align: left;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     /* Remove sizing from flexbox layout */
     flex: none;
     max-width: none;
@@ -175,7 +177,6 @@
     margin: 0.1rem 0;
 }
 
-/* Modal. */
 /* Modal styles */
 .modalBackdrop {
     position: fixed;
@@ -352,8 +353,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 8;
-    line-clamp: 8;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
     -webkit-box-orient: vertical;
     cursor: default;
 }
@@ -361,21 +362,7 @@
 .projectDescriptionWrapper {
     position: relative;
     width: 100%;
-    line-height: 1.25rem;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-/* Tooltip arrow */
-.tooltip::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -6px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: rgba(40, 40, 40, 0.95) transparent transparent transparent;
+    line-height: 1.4rem;
 }
 
 .tooltip {
@@ -400,6 +387,18 @@
     font-size: 1rem;
     overflow-wrap: break-word;
     word-break: normal;
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(40, 40, 40, 0.95) transparent transparent transparent;
 }
 
 .projectDescriptionWrapper:hover .tooltip {
@@ -440,99 +439,6 @@
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-.modalAlertOverlay {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-    border-radius: 6px;
-    padding: 0.6rem 1rem;
-    text-align: center;
-    width: 80%;
-    max-width: 320px;
-    z-index: 10;
-    animation: fadeIn 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translate(-50%, 4px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, 0);
-    }
-}
-
-/* For the under-construction popup -- no longer used, right? */
-.popupMessage {
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fcf3ce;
-    color: #000;
-    padding: 0.75rem 1.25rem;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 10px #000000;
-    z-index: 999;
-    opacity: 0;
-    animation: fadeInOut 5s ease forwards;
-}
-
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-        transform: translate(-50%, 10px);
-    }
-    10% {
-        opacity: 1;
-        transform: translate(-50%, 0);
-    }
-    90% {
-        opacity: 1;
-        transform: translate(-50%, 0);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(-50%, 10px);
-    }
-}
-
-/* no longer used? */
-.modalAlertOverlay_main {
-    position: fixed;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-    border-radius: 6px;
-    padding: 0.6rem 1rem;
-    text-align: center;
-    width: 80%;
-    max-width: 320px;
-    z-index: 999;
-    animation: fadeIn 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translate(-50%, 4px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, 0);
     }
 }
 
@@ -645,4 +551,71 @@
 
 .packageDownloadUrlList {
     margin-bottom: 0px;
+}
+
+/* 2026-01-20 Tuesday 11:56:12.  Field tooltip */
+.fieldLabelWrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    gap: 0px;
+}
+
+.fieldLabel {
+    font-weight: bold;
+}
+
+.fieldColon {
+    font-weight: normal;
+}
+
+.projectDescriptionWrapper:hover .field_tooltip {
+    opacity: 1;
+}
+[data-theme='dark'] .field_tooltip {
+    background: #282828;
+    color: #f0f0f0;
+    border: solid 2px #505050;
+}
+
+.field_tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: calc(0% + 50px);
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #0066ff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    white-space: normal;
+    width: 220px;
+    z-index: 10;
+    opacity: 1;
+
+    line-height: 1.25em;
+    font-size: 1rem;
+    font-size: 0.9rem;
+    overflow-wrap: break-word;
+}
+
+.fieldLabelWrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    gap: 0px;
+}
+
+.fieldLabel {
+    font-weight: bold;
+}
+
+.fieldColon {
+    font-weight: normal;
+}
+
+.fieldLabelWithHelp {
+    cursor: help;
+    text-decoration: dotted underline;
+    text-underline-offset: 2px;
 }
