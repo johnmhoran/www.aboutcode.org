@@ -100,7 +100,7 @@
     {
         "group": "libraries",
         "name": "plugincode",
-        "description": ["Library that provides plugable functionality with plugins, including Click plugins. It is used by ScanCode toolkit and related projects."],
+        "description": ["Library that provides pluggable functionality with plugins, including Click plugins. It is used by ScanCode toolkit and related projects."],
         "repository_url": "https://github.com/aboutcode-org/plugincode",
         "documentation_url": "https://github.com/aboutcode-org/plugincode/blob/main/README.rst",
         "package_download_url": ["https://pypi.org/project/plugincode/"],

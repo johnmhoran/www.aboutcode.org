@@ -77,6 +77,7 @@ const config = {
                     blogSidebarTitle: 'All posts',
                     blogSidebarCount: 'ALL',
                     blogTitle: 'AboutCode blog!',
+                    editUrl: 'https://github.com/aboutcode-org/www.aboutcode.org/tree/main/website/',
                 },
 
                 theme: {
@@ -116,7 +117,7 @@ const config = {
                     },
                     { to: '/blog', label: 'Blog', position: 'left' },
                     {
-                        href: 'https://github.com/aboutcode-org',
+                        href: 'https://github.com/aboutcode-org/www.aboutcode.org',
                         label: 'GitHub',
                         position: 'right',
                     },
