@@ -1,6 +1,14 @@
 # News
 Stay up to date with the latest news from the AboutCode community.
 
+## OSI and AboutCode collaborate to ensure the long-term sustainability, growth, and impact of ClearlyDefined
+*   **Date**: February 2, 2026
+*   **Details**: The Open Source Initiative (OSI) and AboutCode have formally signed
+a [Memorandum of Understanding (MoU)](https://opensource.org/wp-content/uploads/2026/02/MoU-AboutCode-OSI-ClearlyDefined.pdf)
+that establishes a new collaborative approach to stewarding and sustaining the
+ClearlyDefined project. See the [OSI press release](https://opensource.org/blog/ensuring-the-long-term-sustainability-of-clearlydefined-osi-and-aboutcode-sign-mou)
+for more information.
+
 ## Ecma International approved ECMA-427 for PURL
 
 *   **Date**: December 10, 2025
