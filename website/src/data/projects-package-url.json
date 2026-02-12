@@ -4,7 +4,7 @@
         "name": "purldb",
         "description": ["PURLDB provides tools to create and update a database of package metadata keyed by PURL (Package URL) and an API for the PURL data."],
         "repository_url": "https://github.com/aboutcode-org/purldb",
-        "documentation_url": "https://aboutcode.readthedocs.io/projects/PURLdb/en/latest/",
+        "documentation_url": "https://github.com/aboutcode-org/purldb/blob/main/README.rst",
         "package_download_url": ["https://pypi.org/project/minecode-pipelines/", "https://pypi.org/project/purl2vcs/"],
         "service_url": "https://public.purldb.io/api/",
         "languages": "Python",
