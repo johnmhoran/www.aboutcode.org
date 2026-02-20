@@ -26,6 +26,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v31.1.1",
+    "repo_slug": "aboutcode-org/debian-inspector",
+    "repo_url": "https://github.com/aboutcode-org/debian-inspector",
+    "tag": "v31.1.1",
+    "tag_url": "https://github.com/aboutcode-org/debian-inspector/releases/tag/v31.1.1",
+    "published_at": "2025-10-02T20:49:14Z",
+    "releases_page_url": "https://github.com/aboutcode-org/debian-inspector/releases",
+    "compare_url": "https://github.com/aboutcode-org/debian-inspector/compare/v31.1.1...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "JonoYang"
+  },
+  {
     "repo": "v1.0.0",
     "repo_slug": "aboutcode-org/ai-gen-code-search",
     "repo_url": "https://github.com/aboutcode-org/ai-gen-code-search",
