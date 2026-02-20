@@ -115,5 +115,18 @@
     "commits_since": 0,
     "prerelease": false,
     "author": "chinyeungli"
+  },
+  {
+    "repo": "Release v31.0.0",
+    "repo_slug": "aboutcode-org/extractcode",
+    "repo_url": "https://github.com/aboutcode-org/extractcode",
+    "tag": "v31.0.0",
+    "tag_url": "https://github.com/aboutcode-org/extractcode/releases/tag/v31.0.0",
+    "published_at": "2022-05-09T17:37:21Z",
+    "releases_page_url": "https://github.com/aboutcode-org/extractcode/releases",
+    "compare_url": "https://github.com/aboutcode-org/extractcode/compare/v31.0.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "pombredanne"
   }
 ]
