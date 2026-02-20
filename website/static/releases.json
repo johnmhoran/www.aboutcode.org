@@ -91,6 +91,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v0.1.0",
+    "repo_slug": "aboutcode-org/federatedcode",
+    "repo_url": "https://github.com/aboutcode-org/federatedcode",
+    "tag": "v0.1.0",
+    "tag_url": "https://github.com/aboutcode-org/federatedcode/releases/tag/v0.1.0",
+    "published_at": "2025-01-07T15:44:13Z",
+    "releases_page_url": "https://github.com/aboutcode-org/federatedcode/releases",
+    "compare_url": "https://github.com/aboutcode-org/federatedcode/compare/v0.1.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v2.0.1",
     "repo_slug": "aboutcode-org/dependency-inspector",
     "repo_url": "https://github.com/aboutcode-org/dependency-inspector",
