@@ -78,6 +78,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v0.0.3",
+    "repo_slug": "aboutcode-org/elf-inspector",
+    "repo_url": "https://github.com/aboutcode-org/elf-inspector",
+    "tag": "v0.0.3",
+    "tag_url": "https://github.com/aboutcode-org/elf-inspector/releases/tag/v0.0.3",
+    "published_at": "2025-03-17T06:26:50Z",
+    "releases_page_url": "https://github.com/aboutcode-org/elf-inspector/releases",
+    "compare_url": "https://github.com/aboutcode-org/elf-inspector/compare/v0.0.3...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v2.0.1",
     "repo_slug": "aboutcode-org/dependency-inspector",
     "repo_url": "https://github.com/aboutcode-org/dependency-inspector",
