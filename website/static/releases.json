@@ -208,6 +208,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v0.1.0",
+    "repo_slug": "aboutcode-org/rust-inspector",
+    "repo_url": "https://github.com/aboutcode-org/rust-inspector",
+    "tag": "v0.1.0",
+    "tag_url": "https://github.com/aboutcode-org/rust-inspector/releases/tag/v0.1.0",
+    "published_at": "2025-01-06T14:40:05Z",
+    "releases_page_url": "https://github.com/aboutcode-org/rust-inspector/releases",
+    "compare_url": "https://github.com/aboutcode-org/rust-inspector/compare/v0.1.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v0.5.0",
     "repo_slug": "aboutcode-org/go-inspector",
     "repo_url": "https://github.com/aboutcode-org/go-inspector",
