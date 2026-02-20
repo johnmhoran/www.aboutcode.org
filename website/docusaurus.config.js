@@ -6,6 +6,31 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
+// Deployment target: local | gh | dreamhost
+/** @type {'local' | 'gh' | 'dreamhost'} */
+let deployTarget = 'local';
+
+if (process.env.DEPLOY_TARGET === 'gh') {
+    deployTarget = 'gh';
+} else if (process.env.DEPLOY_TARGET === 'dreamhost') {
+    deployTarget = 'dreamhost';
+}
+
+const siteConfig = {
+    local: {
+        url: 'http://localhost',
+        baseUrl: '/',
+    },
+    gh: {
+        url: 'https://aboutcode-org.github.io',
+        baseUrl: '/www.aboutcode.org/',
+    },
+    dreamhost: {
+        url: 'https://www.aboutcode.org',
+        baseUrl: '/',
+    },
+};
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -32,13 +57,13 @@ const config = {
     // // For GitHub pages deployment, it is often '/<projectName>/'
     // baseUrl: '/',
 
-    // // GitHub pages deployment config.
-    // // If you aren't using GitHub pages, you don't need these.
-    // organizationName: 'facebook', // Usually your GitHub org/user name.
-    // projectName: 'docusaurus', // Usually your repo name.
+    // url: 'https://aboutcode-org.github.io',
+    // baseUrl: '/www.aboutcode.org/',
+    // trailingSlash: false,
 
-    url: 'https://aboutcode-org.github.io',
-    baseUrl: '/www.aboutcode.org/',
+    // 2026-02-19 Thursday 18:06:22.  Adapt the www.packageurl.org approach for the GH Pages vs. DreamHost baseUrl adjustment.
+    url: siteConfig[deployTarget].url,
+    baseUrl: siteConfig[deployTarget].baseUrl,
     trailingSlash: false,
 
     // For GitHub pages deployment:

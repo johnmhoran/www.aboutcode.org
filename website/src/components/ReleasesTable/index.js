@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import Layout from '@theme/Layout';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-export default function Releases() {
+export default function ReleasesTable() {
   const [data, setData] = useState([]);
+  const releasesUrl = useBaseUrl('/releases.json');
+
   useEffect(() => {
-    fetch('/releases.json')
+    fetch(releasesUrl)
       .then(res => res.json())
       .then(setData)
       .catch(() => setData([]));
-  }, []);
+  }, [releasesUrl]);
 
   const repos = data.sort(
     (a, b) => new Date(b.published_at) - new Date(a.published_at)
   );
 
-  if (repos.length === 0) return <Layout><p>Loading releases...</p></Layout>;
+  if (repos.length === 0) return <p>Loading releases...</p>;
 
   return (
-    <Layout title="Latest Releases">
       <div className={styles.container}>
-        <h1>Latest Releases</h1>
         <table className={styles.table}>
           <thead>
             <tr>
@@ -52,6 +52,5 @@ export default function Releases() {
           </tbody>
         </table>
       </div>
-    </Layout>
   );
 }
