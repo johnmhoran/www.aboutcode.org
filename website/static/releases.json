@@ -286,6 +286,19 @@
     "author": "chinyeungli"
   },
   {
+    "repo": "v1.0.1",
+    "repo_slug": "aboutcode-org/scancode-plugins",
+    "repo_url": "https://github.com/aboutcode-org/scancode-plugins",
+    "tag": "v1.0.1",
+    "tag_url": "https://github.com/aboutcode-org/scancode-plugins/releases/tag/v1.0.1",
+    "published_at": "2024-08-08T04:00:45Z",
+    "releases_page_url": "https://github.com/aboutcode-org/scancode-plugins/releases",
+    "compare_url": "https://github.com/aboutcode-org/scancode-plugins/compare/v1.0.1...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "chinyeungli"
+  },
+  {
     "repo": "v32.0.0",
     "repo_slug": "aboutcode-org/plugincode",
     "repo_url": "https://github.com/aboutcode-org/plugincode",
