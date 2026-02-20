@@ -105,6 +105,19 @@
   },
   {
     "repo": "v1.0.0",
+    "repo_slug": "aboutcode-org/pygmars",
+    "repo_url": "https://github.com/aboutcode-org/pygmars",
+    "tag": "v1.0.0",
+    "tag_url": "https://github.com/aboutcode-org/pygmars/releases/tag/v1.0.0",
+    "published_at": "2025-07-16T23:49:08Z",
+    "releases_page_url": "https://github.com/aboutcode-org/pygmars/releases",
+    "compare_url": "https://github.com/aboutcode-org/pygmars/compare/v1.0.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "JonoYang"
+  },
+  {
+    "repo": "v1.0.0",
     "repo_slug": "aboutcode-org/ai-gen-code-search",
     "repo_url": "https://github.com/aboutcode-org/ai-gen-code-search",
     "tag": "v1.0.0",
