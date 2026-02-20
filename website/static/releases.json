@@ -26,6 +26,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v0.7.1",
+    "repo_slug": "aboutcode-org/source-inspector",
+    "repo_url": "https://github.com/aboutcode-org/source-inspector",
+    "tag": "v0.7.1",
+    "tag_url": "https://github.com/aboutcode-org/source-inspector/releases/tag/v0.7.1",
+    "published_at": "2026-01-21T16:04:06Z",
+    "releases_page_url": "https://github.com/aboutcode-org/source-inspector/releases",
+    "compare_url": "https://github.com/aboutcode-org/source-inspector/compare/v0.7.1...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v32.5.0",
     "repo_slug": "aboutcode-org/scancode-toolkit",
     "repo_url": "https://github.com/aboutcode-org/scancode-toolkit",
