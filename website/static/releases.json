@@ -52,6 +52,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v0.0.1b1",
+    "repo_slug": "aboutcode-org/purl-validator",
+    "repo_url": "https://github.com/aboutcode-org/purl-validator",
+    "tag": "v0.0.1b1",
+    "tag_url": "https://github.com/aboutcode-org/purl-validator/releases/tag/v0.0.1b1",
+    "published_at": "2025-11-05T20:05:26Z",
+    "releases_page_url": "https://github.com/aboutcode-org/purl-validator/releases",
+    "compare_url": "https://github.com/aboutcode-org/purl-validator/compare/v0.0.1b1...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "JonoYang"
+  },
+  {
     "repo": "v31.1.1",
     "repo_slug": "aboutcode-org/debian-inspector",
     "repo_url": "https://github.com/aboutcode-org/debian-inspector",
