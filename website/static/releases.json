@@ -117,6 +117,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v7.2.2",
+    "repo_slug": "aboutcode-org/matchcode-toolkit",
+    "repo_url": "https://github.com/aboutcode-org/matchcode-toolkit",
+    "tag": "v7.2.2",
+    "tag_url": "https://github.com/aboutcode-org/matchcode-toolkit/releases/tag/v7.2.2",
+    "published_at": "2025-02-27T21:13:12Z",
+    "releases_page_url": "https://github.com/aboutcode-org/matchcode-toolkit/releases",
+    "compare_url": "https://github.com/aboutcode-org/matchcode-toolkit/compare/v7.2.2...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "JonoYang"
+  },
+  {
     "repo": "v0.1.0",
     "repo_slug": "aboutcode-org/federatedcode",
     "repo_url": "https://github.com/aboutcode-org/federatedcode",
