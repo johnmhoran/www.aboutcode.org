@@ -39,6 +39,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v0.8.0",
+    "repo_slug": "aboutcode-org/fetchcode",
+    "repo_url": "https://github.com/aboutcode-org/fetchcode",
+    "tag": "v0.8.0",
+    "tag_url": "https://github.com/aboutcode-org/fetchcode/releases/tag/v0.8.0",
+    "published_at": "2025-11-28T09:15:07Z",
+    "releases_page_url": "https://github.com/aboutcode-org/fetchcode/releases",
+    "compare_url": "https://github.com/aboutcode-org/fetchcode/compare/v0.8.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v31.1.1",
     "repo_slug": "aboutcode-org/debian-inspector",
     "repo_url": "https://github.com/aboutcode-org/debian-inspector",
