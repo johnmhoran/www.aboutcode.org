@@ -31,8 +31,6 @@ const siteConfig = {
     },
 };
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'AboutCode.org',
@@ -51,28 +49,13 @@ const config = {
         v4: true, // Improve compatibility with the upcoming Docusaurus v4
     },
 
-    // // Set the production url of your site here
-    // url: 'https://your-docusaurus-site.example.com',
-    // // Set the /<baseUrl>/ pathname under which your site is served
-    // // For GitHub pages deployment, it is often '/<projectName>/'
-    // baseUrl: '/',
-
-    // url: 'https://aboutcode-org.github.io',
-    // baseUrl: '/www.aboutcode.org/',
-    // trailingSlash: false,
-
-    // 2026-02-19 Thursday 18:06:22.  Adapt the www.packageurl.org approach for the GH Pages vs. DreamHost baseUrl adjustment.
+    // Adapt the www.packageurl.org approach for the GH Pages vs. DreamHost baseUrl adjustment.
     url: siteConfig[deployTarget].url,
     baseUrl: siteConfig[deployTarget].baseUrl,
     trailingSlash: false,
 
-    // 2026-02-20 Friday 11:02:52.No longer needed?
-    // For GitHub pages deployment:
-    // organizationName: 'aboutcode-org',
-    // projectName: 'www.aboutcode.org',
-
     onBrokenLinks: 'throw',
-    // 2026-02-11 Wednesday 10:26:31.  The following is deprecated, to be removed in v4, replaced with similar structure above under 'markdown:'.
+    // The following is deprecated, to be removed in v4, replaced with similar structure above under 'markdown:'.
     // (New config was introduced in 3.9 -- https://docusaurus.io/blog/releases/3.9#:~:text=In%20%2311283%2C%20we%20added%20siteConfig,to%20make%20Docusaurus%20build%20faster.)
     // onBrokenMarkdownLinks: 'warn',
 
@@ -99,8 +82,6 @@ const config = {
                         // TODO We can include a map here as in packageurl.org.
                         // Otherwise, provide a default (so “Edit this page” still works)
                         return `https://github.com/aboutcode-org/www.aboutcode.org/blob/main/website/docs/${docPath}`;
-                        // fork:
-                        // return `https://github.com/johnmhoran/www.aboutcode.org/blob/main/website/docs/${docPath}`;
                     },
                 },
                 blog: {
