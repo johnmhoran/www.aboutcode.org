@@ -1,5 +1,18 @@
 [
   {
+    "repo": "v32.4.2",
+    "repo_slug": "aboutcode-org/commoncode",
+    "repo_url": "https://github.com/aboutcode-org/commoncode",
+    "tag": "v32.4.2",
+    "tag_url": "https://github.com/aboutcode-org/commoncode/releases/tag/v32.4.2",
+    "published_at": "2026-01-14T16:29:54Z",
+    "releases_page_url": "https://github.com/aboutcode-org/commoncode/releases",
+    "compare_url": "https://github.com/aboutcode-org/commoncode/compare/v32.4.2...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v0.2.0",
     "repo_slug": "aboutcode-org/binary-inspector",
     "repo_url": "https://github.com/aboutcode-org/binary-inspector",
