@@ -156,6 +156,19 @@
     "author": "JonoYang"
   },
   {
+    "repo": "v31.1.0",
+    "repo_slug": "aboutcode-org/univers",
+    "repo_url": "https://github.com/aboutcode-org/univers",
+    "tag": "v31.1.0",
+    "tag_url": "https://github.com/aboutcode-org/univers/releases/tag/v31.1.0",
+    "published_at": "2025-09-11T13:33:56Z",
+    "releases_page_url": "https://github.com/aboutcode-org/univers/releases",
+    "compare_url": "https://github.com/aboutcode-org/univers/compare/v31.1.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "keshav-space"
+  },
+  {
     "repo": "v30.4.4",
     "repo_slug": "aboutcode-org/license-expression",
     "repo_url": "https://github.com/aboutcode-org/license-expression",
