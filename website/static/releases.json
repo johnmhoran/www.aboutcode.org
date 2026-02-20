@@ -247,6 +247,19 @@
     "author": "chinyeungli"
   },
   {
+    "repo": "v0.6.1",
+    "repo_slug": "aboutcode-org/saneyaml",
+    "repo_url": "https://github.com/aboutcode-org/saneyaml",
+    "tag": "v0.6.1",
+    "tag_url": "https://github.com/aboutcode-org/saneyaml/releases/tag/v0.6.1",
+    "published_at": "2024-08-14T06:24:45Z",
+    "releases_page_url": "https://github.com/aboutcode-org/saneyaml/releases",
+    "compare_url": "https://github.com/aboutcode-org/saneyaml/compare/v0.6.1...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "chinyeungli"
+  },
+  {
     "repo": "v33.0.1",
     "repo_slug": "aboutcode-org/container-inspector",
     "repo_url": "https://github.com/aboutcode-org/container-inspector",
