@@ -65,6 +65,19 @@
     "author": "JonoYang"
   },
   {
+    "repo": "v30.4.4",
+    "repo_slug": "aboutcode-org/license-expression",
+    "repo_url": "https://github.com/aboutcode-org/license-expression",
+    "tag": "v30.4.4",
+    "tag_url": "https://github.com/aboutcode-org/license-expression/releases/tag/v30.4.4",
+    "published_at": "2025-07-22T11:15:15Z",
+    "releases_page_url": "https://github.com/aboutcode-org/license-expression/releases",
+    "compare_url": "https://github.com/aboutcode-org/license-expression/compare/v30.4.4...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v1.0.0",
     "repo_slug": "aboutcode-org/ai-gen-code-search",
     "repo_url": "https://github.com/aboutcode-org/ai-gen-code-search",
