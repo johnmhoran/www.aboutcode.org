@@ -66,9 +66,10 @@ const config = {
     baseUrl: siteConfig[deployTarget].baseUrl,
     trailingSlash: false,
 
+    // 2026-02-20 Friday 11:02:52.No longer needed?
     // For GitHub pages deployment:
-    organizationName: 'aboutcode-org',
-    projectName: 'www.aboutcode.org',
+    // organizationName: 'aboutcode-org',
+    // projectName: 'www.aboutcode.org',
 
     onBrokenLinks: 'throw',
     // 2026-02-11 Wednesday 10:26:31.  The following is deprecated, to be removed in v4, replaced with similar structure above under 'markdown:'.
