@@ -91,6 +91,19 @@
     "author": "pombredanne"
   },
   {
+    "repo": "v7.0.0",
+    "repo_slug": "aboutcode-org/purldb",
+    "repo_url": "https://github.com/aboutcode-org/purldb",
+    "tag": "v7.0.0",
+    "tag_url": "https://github.com/aboutcode-org/purldb/releases/tag/v7.0.0",
+    "published_at": "2025-05-14T11:22:31Z",
+    "releases_page_url": "https://github.com/aboutcode-org/purldb/releases",
+    "compare_url": "https://github.com/aboutcode-org/purldb/compare/v7.0.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "AboutCode Toolkit v11.1.1",
     "repo_slug": "aboutcode-org/aboutcode-toolkit",
     "repo_url": "https://github.com/aboutcode-org/aboutcode-toolkit",
