@@ -182,6 +182,19 @@
     "author": "chinyeungli"
   },
   {
+    "repo": "v32.0.0",
+    "repo_slug": "aboutcode-org/plugincode",
+    "repo_url": "https://github.com/aboutcode-org/plugincode",
+    "tag": "v32.0.0",
+    "tag_url": "https://github.com/aboutcode-org/plugincode/releases/tag/v32.0.0",
+    "published_at": "2023-05-02T19:12:38Z",
+    "releases_page_url": "https://github.com/aboutcode-org/plugincode/releases",
+    "compare_url": "https://github.com/aboutcode-org/plugincode/compare/v32.0.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "JonoYang"
+  },
+  {
     "repo": "v0.9.12",
     "repo_slug": "aboutcode-org/nuget-inspector",
     "repo_url": "https://github.com/aboutcode-org/nuget-inspector",
