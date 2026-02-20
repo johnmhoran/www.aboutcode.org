@@ -1,7 +1,6 @@
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .card {
@@ -39,11 +38,6 @@
   font-size: 0.75rem;
 }
 
-/* 2026-02-16 Monday 18:58:36.  For the updated .json. */
-.container {
-  margin-top: 2rem;
-}
-
 .generated {
   font-size: 0.9rem;
   color: var(--ifm-color-emphasis-700);
@@ -51,73 +45,9 @@
   margin-bottom: 1rem;
 }
 
-/* .table {
-  width: 100%;
-  border-collapse: collapse;
-} */
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
-/* .th {
-  text-align: left;
-  padding: 8px;
-  border-bottom: 2px solid var(--ifm-color-emphasis-300);
-  font-weight: 600;
-}
-
-.td {
-  padding: 8px;
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
-  vertical-align: top;
-} */
-
-.th {
-  text-align: left;
-  padding: 6px 8px;
-  border-bottom: 2px solid var(--ifm-color-emphasis-300);
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.td {
-  padding: 6px 8px;
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
-  vertical-align: top;
-  font-size: 0.88rem;
-  line-height: 1.2;
-}
-
-/* .repo {
-  font-weight: 500;
-} */
-
 .tag {
   font-family: var(--ifm-font-family-monospace);
 }
-
-/* .body {
-  max-width: 420px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--ifm-color-emphasis-700);
-} */
-
-/* .body {
-  max-width: 480px;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  line-height: 1.4;
-  color: var(--ifm-color-emphasis-700);
-
-  max-height: 4.2em;
-  overflow: hidden;
-} */
 
 .body {
   display: -webkit-box;
@@ -140,25 +70,6 @@
   width: 40%;
 }
 
-/* 2026-02-16 Monday 19:14:52.Zebra striping? */
-/* tbody tr:nth-child(even) {
-  background-color: var(--ifm-color-emphasis-100);
-} */
-
-/* 2026-02-17 Tuesday 09:21:06. */
-table td {
-    color: var(--ifm-table-cell-color);
-    color: #000000;
-}
-
-/* ========================================== */
-/* 2026-02-19 Thursday 08:42:41. cl */
-.container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -167,7 +78,8 @@ table td {
 
 .table th,
 .table td {
-  padding: 0.75rem 1rem;
+  padding: 0.25rem 1rem;
+
   text-align: left;
   border-bottom: 1px solid var(--ifm-color-emphasis-300);
   white-space: nowrap;
@@ -178,11 +90,11 @@ table td {
   background-color: var(--ifm-color-emphasis-100);
 }
 
-.table tr:hover {
-  background-color: var(--ifm-color-emphasis-50);
+table td {
+    color: var(--ifm-table-cell-color);
+    color: #000000;
 }
 
-.table td:first-child {
-  font-family: monospace;
-  font-size: 0.9rem;
+.table tr:hover {
+  background-color: var(--ifm-color-emphasis-50);
 }

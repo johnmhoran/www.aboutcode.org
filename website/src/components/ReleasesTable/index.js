@@ -21,13 +21,13 @@ export default function ReleasesTable() {
 
   return (
       <div className={styles.container}>
+        <div className={styles.tableDiv}>
         <table className={styles.table}>
           <thead>
             <tr>
               <th>Repo</th>
               <th>Tag</th>
               <th>Published</th>
-              <th>Releases Page</th>
             </tr>
           </thead>
           <tbody>
@@ -35,22 +35,20 @@ export default function ReleasesTable() {
               <tr key={idx}>
                 <td>
                   <a href={info.repo_url} target='_blank' rel='noreferrer'>
-                    {info.repo_url.replace("https://github.com/", "")}
+                    {info.repo_url.replace("https://github.com/", "").split("/").pop()}
                   </a>
                 </td>
-                <td>{info.tag}</td>
-                {/* <td>{new Date(info.published_at).toLocaleDateString()}</td> */}
-                {/* <td>{new Date(info.published_at).toISOString().replace('T', ' ').replace('.000Z', ' UTC')}</td> */}
-                <td>{info.published_at ? new Date(info.published_at).toISOString().replace('T', ' ').replace('.000Z', ' UTC') : 'N/A'}</td>
                 <td>
-                  <a href={info.releases_page_url} target='_blank' rel='noreferrer'>
-                    Releases
+                  <a href={info.tag_url} target='_blank' rel='noreferrer'>
+                    {info.tag}
                   </a>
                 </td>
+                <td>{info.published_at ? new Date(info.published_at).toISOString().replace('T', ' ').replace('.000Z', ' UTC') : 'N/A'}</td>
               </tr>
             ))}
           </tbody>
         </table>
+        </div>
       </div>
   );
 }
