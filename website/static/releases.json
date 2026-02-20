@@ -78,6 +78,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v2.0.1",
+    "repo_slug": "aboutcode-org/dependency-inspector",
+    "repo_url": "https://github.com/aboutcode-org/dependency-inspector",
+    "tag": "v2.0.1",
+    "tag_url": "https://github.com/aboutcode-org/dependency-inspector/releases/tag/v2.0.1",
+    "published_at": "2024-08-20T04:02:06Z",
+    "releases_page_url": "https://github.com/aboutcode-org/dependency-inspector/releases",
+    "compare_url": "https://github.com/aboutcode-org/dependency-inspector/compare/v2.0.1...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "chinyeungli"
+  },
+  {
     "repo": "v33.0.1",
     "repo_slug": "aboutcode-org/container-inspector",
     "repo_url": "https://github.com/aboutcode-org/container-inspector",
