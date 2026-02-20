@@ -78,6 +78,19 @@
     "author": "JonoYang"
   },
   {
+    "repo": "v0.15.0",
+    "repo_slug": "aboutcode-org/python-inspector",
+    "repo_url": "https://github.com/aboutcode-org/python-inspector",
+    "tag": "v0.15.0",
+    "tag_url": "https://github.com/aboutcode-org/python-inspector/releases/tag/v0.15.0",
+    "published_at": "2025-11-05T07:59:14Z",
+    "releases_page_url": "https://github.com/aboutcode-org/python-inspector/releases",
+    "compare_url": "https://github.com/aboutcode-org/python-inspector/compare/v0.15.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v31.1.1",
     "repo_slug": "aboutcode-org/debian-inspector",
     "repo_url": "https://github.com/aboutcode-org/debian-inspector",
