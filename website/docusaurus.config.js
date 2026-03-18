@@ -152,7 +152,7 @@ const config = {
                     },
 
                     {
-                        html: `<a href="https://www.linkedin.com/company/aboutcode/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_companies%3BrQlfT6M0S1qSDpQjt52CiQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="/www.aboutcode.org/img/brand-inlogo-download-fg-dsk-v01-2x.png" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://www.linkedin.com/company/aboutcode/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="/www.aboutcode.org/img/brand-inlogo-download-fg-dsk-v01-2x.png" alt="" width="20" height="20"></a>`,
                     },
 
                     {
