@@ -1,5 +1,18 @@
 [
   {
+    "repo": "v0.8.2",
+    "repo_slug": "aboutcode-org/fetchcode",
+    "repo_url": "https://github.com/aboutcode-org/fetchcode",
+    "tag": "v0.8.2",
+    "tag_url": "https://github.com/aboutcode-org/fetchcode/releases/tag/v0.8.2",
+    "published_at": "2026-03-18T13:03:02Z",
+    "releases_page_url": "https://github.com/aboutcode-org/fetchcode/releases",
+    "compare_url": "https://github.com/aboutcode-org/fetchcode/compare/v0.8.2...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v1.7.0",
     "repo_slug": "aboutcode-org/purlvalidator-go",
     "repo_url": "https://github.com/aboutcode-org/purlvalidator-go",
@@ -8,19 +21,6 @@
     "published_at": "2026-03-18T01:52:34Z",
     "releases_page_url": "https://github.com/aboutcode-org/purlvalidator-go/releases",
     "compare_url": "https://github.com/aboutcode-org/purlvalidator-go/compare/v1.7.0...main",
-    "commits_since": 0,
-    "prerelease": false,
-    "author": "github-actions[bot]"
-  },
-  {
-    "repo": "v0.8.1",
-    "repo_slug": "aboutcode-org/fetchcode",
-    "repo_url": "https://github.com/aboutcode-org/fetchcode",
-    "tag": "v0.8.1",
-    "tag_url": "https://github.com/aboutcode-org/fetchcode/releases/tag/v0.8.1",
-    "published_at": "2026-03-17T14:15:03Z",
-    "releases_page_url": "https://github.com/aboutcode-org/fetchcode/releases",
-    "compare_url": "https://github.com/aboutcode-org/fetchcode/compare/v0.8.1...main",
     "commits_since": 0,
     "prerelease": false,
     "author": "github-actions[bot]"
