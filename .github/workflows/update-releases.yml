@@ -117,14 +117,10 @@ jobs:
         # 5 Commit & push changes if releases.json changed
       - name: Commit and push if changed
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "AboutCode Automation"
+          git config user.email "automation@aboutcode.org"
           git add website/static/releases.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update releases for ${{ matrix.repo }}"
-            git pull --rebase origin main
-            git push
-          else
-            echo "No changes detected"
-          fi
+          git commit -m "$(echo -e "Update releases for ${{ matrix.repo }}\n\nSigned-off-by: AboutCode Automation <automation@aboutcode.org>")" || exit 0
+          git pull --rebase origin main
+          git push
         shell: bash
