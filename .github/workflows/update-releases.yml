@@ -6,12 +6,11 @@ on:
     # - cron: "15 * * * *" # every hour at :15
     - cron: "15 9 * * *" # every day at 09:15 UTC
 
-permissions:
-  contents: write  # needed to commit updates to releases.json
-
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to commit updates to releases.json
 
     strategy:
       max-parallel: 1
@@ -52,19 +51,13 @@ jobs:
           - aboutcode-org/www.aboutcode.org
           # Add more repos here
 
-    env:
-      # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GH_REPO_POLLING }}
-
     steps:
-
       # 1 Checkout the target repo (Repo B)
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
         with:
           ref: main
           fetch-depth: 0
-          token: ${{ secrets.GH_REPO_POLLING }}
 
       # 2 Debug: show which repo is being processed
       - name: Debug - current repo
@@ -117,14 +110,10 @@ jobs:
         # 5 Commit & push changes if releases.json changed
       - name: Commit and push if changed
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "AboutCode Automation"
+          git config user.email "automation@aboutcode.org"
           git add website/static/releases.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update releases for ${{ matrix.repo }}"
-            git pull --rebase origin main
-            git push
-          else
-            echo "No changes detected"
-          fi
+          git commit -m "$(echo -e "Update releases for ${{ matrix.repo }}\n\nSigned-off-by: AboutCode Automation <automation@aboutcode.org>")" || exit 0
+          git pull --rebase origin main
+          git push
         shell: bash
