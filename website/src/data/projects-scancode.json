@@ -11,7 +11,8 @@
         "software_license": "Apache-2.0",
         "data_license": "CC-BY-4.0",
         "platform": "Python",
-        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra"]
+        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra"],
+        "notes": "Not applicable"
     },
     {
         "group": "scancode",
@@ -25,7 +26,8 @@
         "software_license": "Apache-2.0",
         "data_license": "CC-BY-4.0",
         "platform": "Not applicable",
-        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra", "https://github.com/DennisClark"]
+        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra", "https://github.com/DennisClark"],
+        "notes": "Not applicable"
     },
     {
         "group": "scancode",
@@ -39,7 +41,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Linux, MacOS, Windows",
-        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra", "https://github.com/mjherzog"]
+        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra", "https://github.com/mjherzog"],
+        "notes": "Not applicable"
     },
     {
         "group": "scancode",
@@ -53,7 +56,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "scancode",
@@ -67,7 +71,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Azure, GitLab, Jenkins",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "scancode",
@@ -81,7 +86,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "ScanCode",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "scancode",
@@ -95,7 +101,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "ScanCode",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "scancode",
@@ -109,7 +116,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Docker",
-        "lead_maintainer": ["https://github.com/keshav-space"]
+        "lead_maintainer": ["https://github.com/keshav-space"],
+        "notes": "Not applicable"
     },
     {
         "group": "scancode",
@@ -117,12 +125,13 @@
         "description": ["aboutcode-toolkit is a set of command line tools to document the provenance of your code and generate attribution notices. aboutcode-toolkit uses small yaml files to document code provenance inside a codebase."],
         "repository_url": "https://github.com/aboutcode-org/aboutcode-toolkit",
         "documentation_url": "https://aboutcode.readthedocs.io/projects/aboutcode-toolkit/en/stable/",
-        "package_download_url": ["https://pypi.org/project/aboutcode-toolkit/", "https://pypi.org/project/attributecode/"],
+        "package_download_url": ["https://pypi.org/project/aboutcode-toolkit/"],
         "service_url": "Not applicable",
         "languages": "Python",
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Linux, MacOS, Windows",
-        "lead_maintainer": ["https://github.com/chinyeungli"]
+        "lead_maintainer": ["https://github.com/chinyeungli"],
+        "notes": "Not applicable"
     }
 ]

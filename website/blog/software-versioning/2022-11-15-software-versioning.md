@@ -12,7 +12,7 @@ One software version control to rule them (modern software development) all?
 
 Software projects make many decisions, but one of the most critical is deciding how to implement version control (also known as revision control, source control, or source code management). With modern software development, a versioning convention is a key tool to manage software releases and revisions. The two main approaches are calendar versioning (CalVer) and semantic versioning (SemVer), often with some alterations depending on an organization’s or project’s requirements.
 
-For AboutCode projects, we started with SemVer, transitioned to CalVer and then migrated back to a format that mostly resembles SemVer. This blog post details the pros and cons of each version convention, along with explaining why we embarked on this version convention journey.
+For AboutCode projects, we started with SemVer, transitioned to CalVer and then migrated back to a format that mostly resembles SemVer. This blog post details the pros and cons of each version convention, along with explaining why we embarked on this version convention journey.  <!-- truncate -->
 
 ## The Fellowship of the Version Conventions
 

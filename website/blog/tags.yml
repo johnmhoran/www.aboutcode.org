@@ -18,15 +18,50 @@ chen:
   permalink: /chen
   description: chen tag description
 
+copyleft:
+  label: copyleft
+  permalink: /copyleft
+  description: copyleft tag description
+
 dependencies:
   label: dependencies
   permalink: /dependencies
   description: dependencies tag description
 
+dual license:
+  label: dual license
+  permalink: /dual license
+  description: dual license tag description
+
+java:
+  label: java
+  permalink: /java
+  description: java tag description
+
+license clarity scoring:
+  label: license clarity scoring
+  permalink: /license clarity scoring
+  description: license clarity scoring tag description
+
+license compliance:
+  label: license compliance
+  permalink: /license compliance
+  description: license compliance tag description
+
+license detection:
+  label: license detection
+  permalink: /license detection
+  description: license detection tag description
+
 purl:
   label: PURL
   permalink: /PURL
   description: PURL tag description
+
+SCA automation:
+  label: SCA automation
+  permalink: /SCA automation
+  description: SCA automation tag description
 
 vcio:
   label: vcio
@@ -37,6 +72,11 @@ vers:
   label: VERS
   permalink: /VERS
   description: VERS tag description
+
+version control:
+  label: version control
+  permalink: /version control
+  description: version control tag description
 
 vulnerabilities:
   label: vulnerabilities

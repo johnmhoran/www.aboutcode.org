@@ -11,7 +11,8 @@
         "software_license": "AGPL-3.0-only",
         "data_license": "Not applicable",
         "platform": "Docker, Debian-based Linux distros",
-        "lead_maintainer": ["https://github.com/tdruez", "https://github.com/DennisClark"]
+        "lead_maintainer": ["https://github.com/tdruez", "https://github.com/DennisClark"],
+        "notes": "Not applicable"
     },
     {
         "group": "application",
@@ -25,7 +26,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Docker",
-        "lead_maintainer": ["https://github.com/tdruez"]
+        "lead_maintainer": ["https://github.com/tdruez"],
+        "notes": "Not applicable"
     },
     {
         "group": "application",
@@ -34,11 +36,12 @@
         "repository_url": "https://github.com/aboutcode-org/vulnerablecode",
         "documentation_url": "https://vulnerablecode.readthedocs.io/en/stable/",
         "package_download_url": ["https://pypi.org/project/vulnerablecode/", "https://pypi.org/project/aboutcode.federated/", "https://pypi.org/project/aboutcode.hashid/"],
-        "service_url": "https://public2.vulnerablecode.io/",
+        "service_url": "https://public.vulnerablecode.io/",
         "languages": "Python",
         "software_license": "Apache-2.0",
         "data_license": "CC-BY-SA-4.0",
         "platform": "Docker, Debian-based Linux distros, MacOS",
-        "lead_maintainer": ["https://github.com/TG1999", "https://github.com/keshav-space"]
+        "lead_maintainer": ["https://github.com/TG1999", "https://github.com/keshav-space"],
+        "notes": "Coming soon: https://public2.vulnerablecode.io/."
     }
 ]

@@ -12,7 +12,7 @@ When automating SCA, License Clarity Scoring helps determine if scan results req
 
 When automating Software Composition Analysis (SCA) with a scanning tool, you need to quickly evaluate the results – especially to determine whether or not the results require a deeper investigation.
 
-[ScanCode](https://www.nexb.com/scancode) now includes License Clarity Scoring to provide users with a confidence level regarding the automated scan results.
+[ScanCode](https://www.nexb.com/scancode) now includes License Clarity Scoring to provide users with a confidence level regarding the automated scan results.  <!-- truncate -->
 
 License Clarity is a set of criteria that indicate how clearly, comprehensively and accurately a software project has defined and communicated the licensing that applies to the project software. Note that this is not an indication of the license clarity of any software dependencies.
 

@@ -9,5 +9,6 @@
     "software_license": "The open source license that applies to the software from this project.",
     "data_license": "The open source license that applies to a dataset or data service maintained by this project.",
     "platform":  "The primary platform for deploying the project software. This could be Python (meaning a Python environment), Docker, an operating system, a CI/CD system or other platform.",
-    "lead_maintainer": "The lead maintainer (or maintainers for this project). Please communicate with maintainers inside GitHub using discussions, issues or pull requests."
+    "lead_maintainer": "The lead maintainer (or maintainers) for this project. Please communicate with maintainers inside GitHub using discussions, issues or pull requests.",
+    "notes": "Additional information."
 }

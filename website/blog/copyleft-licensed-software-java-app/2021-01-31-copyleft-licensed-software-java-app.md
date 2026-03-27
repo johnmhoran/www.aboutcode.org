@@ -17,7 +17,7 @@ This document explains some key considerations for the use of Copyleft-licensed 
 
 For this document, “JAR” refers specifically to an executable Java library that is a collection of `.class` files packaged into a file with the `.jar` extension; it does not refer to the use of a `.jar` file as an archive file only (such as for packaging source files for a Java library).
 
-The purpose of this document is to present a “conservative” interpretation of what linking, or interaction may mean in the Java context. It is not based on any particular product or application and we are not aware of any specific license compliance enforcement actions in this area.
+The purpose of this document is to present a “conservative” interpretation of what linking, or interaction may mean in the Java context. It is not based on any particular product or application and we are not aware of any specific license compliance enforcement actions in this area.  <!-- truncate -->
 
 ## “Strong” Copyleft-licensed Components
 

@@ -92,10 +92,7 @@ export default function ProjectGrids() {
 
         return (
             <div className={styles.projectDescriptionWrapper}>
-                <div
-                    ref={descRef}
-                    className={`${styles.projectDescription}`}
-                >
+                <div ref={descRef} className={`${styles.projectDescription}`}>
                     {text}
                 </div>
                 {showTooltip && <div className={styles.tooltip}>{text}</div>}
@@ -140,27 +137,21 @@ export default function ProjectGrids() {
         );
     }
 
+    // Refactored null-value check.
     function normalizeToArray(value) {
         const INVALID_VALUES = new Set(['Not available', 'Not applicable']);
-
         if (Array.isArray(value)) {
             return value.filter(
                 (v) => typeof v === 'string' && !INVALID_VALUES.has(v),
             );
         }
-
         if (typeof value === 'string' && !INVALID_VALUES.has(value)) {
             return [value];
         }
-
         return [];
     }
 
-    const leadMaintainers = normalizeToArray(selectedProject?.lead_maintainer);
-
-    const packageDownloadUrls = normalizeToArray(
-        selectedProject?.package_download_url,
-    );
+    const isUsableValue = (value) => normalizeToArray(value).length > 0;
 
     return (
         <div className={styles.projectGridWrapper01}>
@@ -200,7 +191,7 @@ export default function ProjectGrids() {
                                         </div>
                                     </div>
 
-                                    <div>
+                                    {isUsableValue(project.description) && (
                                         <div
                                             className={
                                                 styles.projectDescriptionWrapper
@@ -214,117 +205,75 @@ export default function ProjectGrids() {
                                                 )}
                                             />
                                         </div>
-                                    </div>
+                                    )}
 
-                                    <div className={styles.modalLinks01}>
-                                        {project.documentation_url &&
-                                            project.documentation_url !==
-                                                'Not applicable' &&
-                                            project.documentation_url !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Documentation URL'
-                                                        help={
-                                                            project_field_help.documentation_url
-                                                        }
-                                                    />
-                                                    <a
-                                                        href={
-                                                            project.documentation_url
-                                                        }
-                                                        target='_blank'
-                                                        rel='noopener noreferrer'
-                                                        className={
-                                                            styles.modalLinkUrl
-                                                        }
-                                                        onClick={(e) =>
-                                                            e.stopPropagation()
-                                                        }
-                                                    >
-                                                        {
-                                                            project.documentation_url
-                                                        }
-                                                    </a>
-                                                </div>
-                                            )}
-                                    </div>
+                                    {isUsableValue(
+                                        project.documentation_url,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Documentation URL'
+                                                help={
+                                                    project_field_help.documentation_url
+                                                }
+                                            />
+                                            <a
+                                                href={project.documentation_url}
+                                                target='_blank'
+                                                rel='noopener noreferrer'
+                                                className={styles.modalLinkUrl}
+                                                onClick={(e) =>
+                                                    e.stopPropagation()
+                                                }
+                                            >
+                                                {project.documentation_url}
+                                            </a>
+                                        </div>
+                                    )}
 
-                                    <div className={styles.modalLinks01}>
-                                        {project.repository_url &&
-                                            project.repository_url !==
-                                                'Not applicable' &&
-                                            project.repository_url !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Repository URL'
-                                                        help={
-                                                            project_field_help.repository_url
-                                                        }
-                                                    />
-                                                    <a
-                                                        href={
-                                                            project.repository_url
-                                                        }
-                                                        target='_blank'
-                                                        rel='noopener noreferrer'
-                                                        className={
-                                                            styles.modalLinkUrl
-                                                        }
-                                                        onClick={(e) =>
-                                                            e.stopPropagation()
-                                                        }
-                                                    >
-                                                        {project.repository_url}
-                                                    </a>
-                                                </div>
-                                            )}
-                                    </div>
+                                    {isUsableValue(project.repository_url) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Repository URL'
+                                                help={
+                                                    project_field_help.repository_url
+                                                }
+                                            />
+                                            <a
+                                                href={project.repository_url}
+                                                target='_blank'
+                                                rel='noopener noreferrer'
+                                                className={styles.modalLinkUrl}
+                                                onClick={(e) =>
+                                                    e.stopPropagation()
+                                                }
+                                            >
+                                                {project.repository_url}
+                                            </a>
+                                        </div>
+                                    )}
 
-                                    <div className={styles.modalLinks01}>
-                                        {project.service_url &&
-                                            project.service_url !==
-                                                'Not applicable' &&
-                                            project.service_url !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Service URL'
-                                                        help={
-                                                            project_field_help.service_url
-                                                        }
-                                                    />
-                                                    <a
-                                                        href={
-                                                            project.service_url
-                                                        }
-                                                        target='_blank'
-                                                        rel='noopener noreferrer'
-                                                        className={
-                                                            styles.modalLinkUrl
-                                                        }
-                                                        onClick={(e) =>
-                                                            e.stopPropagation()
-                                                        }
-                                                    >
-                                                        {project.service_url}
-                                                    </a>
-                                                </div>
-                                            )}
-                                    </div>
+                                    {isUsableValue(project.service_url) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Service URL'
+                                                help={
+                                                    project_field_help.service_url
+                                                }
+                                            />
+                                            <a
+                                                href={project.service_url}
+                                                target='_blank'
+                                                rel='noopener noreferrer'
+                                                className={styles.modalLinkUrl}
+                                                onClick={(e) =>
+                                                    e.stopPropagation()
+                                                }
+                                            >
+                                                {project.service_url}
+                                            </a>
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -343,264 +292,60 @@ export default function ProjectGrids() {
                             <>
                                 <div className={styles.fullWidthSection}>
                                     <h2>{selectedProject.name}</h2>
-                                    <p>
-                                        {selectedProject.description.map(
-                                            (para, idx) => (
-                                                <p key={idx}>{para}</p>
-                                            ),
-                                        )}
-                                    </p>
+
+                                    {isUsableValue(
+                                        selectedProject.description,
+                                    ) && (
+                                        <p>
+                                            {selectedProject.description.map(
+                                                (para, idx) => (
+                                                    <p key={idx}>{para}</p>
+                                                ),
+                                            )}
+                                        </p>
+                                    )}
                                 </div>
 
                                 <div className={styles.column}>
-                                    <div>
-                                        {selectedProject.repository_url &&
-                                            selectedProject.repository_url !==
-                                                'Not applicable' &&
-                                            selectedProject.repository_url !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Repository URL'
-                                                        help={
-                                                            project_field_help.repository_url
-                                                        }
-                                                    />
-                                                    <a
-                                                        href={
-                                                            selectedProject.repository_url
-                                                        }
-                                                        target='_blank'
-                                                        rel='noopener noreferrer'
-                                                        className={
-                                                            styles.modalLinkUrl
-                                                        }
-                                                    >
-                                                        {
-                                                            selectedProject.repository_url
-                                                        }
-                                                    </a>
-                                                </div>
-                                            )}
-                                    </div>
-
-                                    <div>
-                                        {packageDownloadUrls.length > 0 && (
-                                            <div
-                                                className={styles.modalLinks01}
-                                            >
-                                                <FieldLabelHelpCard
-                                                    label='Package Download URL'
-                                                    help={
-                                                        project_field_help.package_download_url
-                                                    }
-                                                />
-                                                <ul
-                                                    className={
-                                                        styles.packageDownloadUrlList
-                                                    }
-                                                >
-                                                    {packageDownloadUrls.map(
-                                                        (url, idx) => (
-                                                            <li key={idx}>
-                                                                <a
-                                                                    href={url}
-                                                                    target='_blank'
-                                                                    rel='noopener noreferrer'
-                                                                    className={
-                                                                        styles.modalLinkUrl
-                                                                    }
-                                                                >
-                                                                    {url}
-                                                                </a>
-                                                            </li>
-                                                        ),
-                                                    )}
-                                                </ul>
-                                            </div>
-                                        )}
-                                    </div>
-
-                                    <div>
-                                        {selectedProject.documentation_url &&
-                                            selectedProject.documentation_url !==
-                                                'Not applicable' &&
-                                            selectedProject.documentation_url !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Documentation URL'
-                                                        help={
-                                                            project_field_help.documentation_url
-                                                        }
-                                                    />
-                                                    <a
-                                                        href={
-                                                            selectedProject.documentation_url
-                                                        }
-                                                        target='_blank'
-                                                        rel='noopener noreferrer'
-                                                        className={
-                                                            styles.modalLinkUrl
-                                                        }
-                                                    >
-                                                        {
-                                                            selectedProject.documentation_url
-                                                        }
-                                                    </a>
-                                                </div>
-                                            )}
-                                    </div>
-
-                                    <div>
-                                        {selectedProject.service_url &&
-                                            selectedProject.service_url !==
-                                                'Not applicable' &&
-                                            selectedProject.service_url !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Service URL'
-                                                        help={
-                                                            project_field_help.service_url
-                                                        }
-                                                    />
-                                                    <a
-                                                        href={
-                                                            selectedProject.service_url
-                                                        }
-                                                        target='_blank'
-                                                        rel='noopener noreferrer'
-                                                        className={
-                                                            styles.modalLinkUrl
-                                                        }
-                                                    >
-                                                        {
-                                                            selectedProject.service_url
-                                                        }
-                                                    </a>
-                                                </div>
-                                            )}
-                                    </div>
-
-                                    <div>
-                                        {selectedProject.languages &&
-                                            selectedProject.languages !==
-                                                'Not applicable' &&
-                                            selectedProject.languages !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Language(s)'
-                                                        help={
-                                                            project_field_help.languages
-                                                        }
-                                                    />
-                                                    {selectedProject.languages}
-                                                </div>
-                                            )}
-                                    </div>
-
-                                    <div>
-                                        {selectedProject.platform &&
-                                            selectedProject.platform !==
-                                                'Not applicable' &&
-                                            selectedProject.platform !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Platform'
-                                                        help={
-                                                            project_field_help.platform
-                                                        }
-                                                    />
-                                                    {selectedProject.platform}
-                                                </div>
-                                            )}
-                                    </div>
-
-                                    <div>
-                                        {selectedProject.software_license &&
-                                            selectedProject.software_license !==
-                                                'Not applicable' &&
-                                            selectedProject.software_license !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Software License'
-                                                        help={
-                                                            project_field_help.software_license
-                                                        }
-                                                    />
-                                                    {
-                                                        selectedProject.software_license
-                                                    }
-                                                </div>
-                                            )}
-                                    </div>
-
-                                    <div>
-                                        {selectedProject.data_license &&
-                                            selectedProject.data_license !==
-                                                'Not applicable' &&
-                                            selectedProject.data_license !==
-                                                'Not available' && (
-                                                <div
-                                                    className={
-                                                        styles.modalLinks01
-                                                    }
-                                                >
-                                                    <FieldLabelHelpCard
-                                                        label='Data License'
-                                                        help={
-                                                            project_field_help.data_license
-                                                        }
-                                                    />
-                                                    {
-                                                        selectedProject.data_license
-                                                    }
-                                                </div>
-                                            )}
-                                    </div>
-
-                                    {leadMaintainers.length > 0 && (
+                                    {isUsableValue(
+                                        selectedProject.repository_url,
+                                    ) && (
                                         <div className={styles.modalLinks01}>
                                             <FieldLabelHelpCard
-                                                label='Lead Maintainer(s)'
+                                                label='Repository URL'
                                                 help={
-                                                    project_field_help.lead_maintainer
+                                                    project_field_help.repository_url
+                                                }
+                                            />
+                                            <a
+                                                href={
+                                                    selectedProject.repository_url
+                                                }
+                                                target='_blank'
+                                                rel='noopener noreferrer'
+                                                className={styles.modalLinkUrl}
+                                            >
+                                                {selectedProject.repository_url}
+                                            </a>
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(
+                                        selectedProject.package_download_url,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Package Download URL(s)'
+                                                help={
+                                                    project_field_help.package_download_url
                                                 }
                                             />
                                             <ul
                                                 className={
-                                                    styles.maintainerList
+                                                    styles.packageDownloadUrlList
                                                 }
                                             >
-                                                {leadMaintainers.map(
+                                                {selectedProject.package_download_url.map(
                                                     (url, idx) => (
                                                         <li key={idx}>
                                                             <a
@@ -617,6 +362,155 @@ export default function ProjectGrids() {
                                                     ),
                                                 )}
                                             </ul>
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(
+                                        selectedProject.documentation_url,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Documentation URL'
+                                                help={
+                                                    project_field_help.documentation_url
+                                                }
+                                            />
+                                            <a
+                                                href={
+                                                    selectedProject.documentation_url
+                                                }
+                                                target='_blank'
+                                                rel='noopener noreferrer'
+                                                className={styles.modalLinkUrl}
+                                            >
+                                                {
+                                                    selectedProject.documentation_url
+                                                }
+                                            </a>
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(
+                                        selectedProject.service_url,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Service URL'
+                                                help={
+                                                    project_field_help.service_url
+                                                }
+                                            />
+                                            <a
+                                                href={
+                                                    selectedProject.service_url
+                                                }
+                                                target='_blank'
+                                                rel='noopener noreferrer'
+                                                className={styles.modalLinkUrl}
+                                            >
+                                                {selectedProject.service_url}
+                                            </a>
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(
+                                        selectedProject.languages,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Language(s)'
+                                                help={
+                                                    project_field_help.languages
+                                                }
+                                            />
+                                            {selectedProject.languages}
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(
+                                        selectedProject.platform,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Platform'
+                                                help={
+                                                    project_field_help.platform
+                                                }
+                                            />
+                                            {selectedProject.platform}
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(
+                                        selectedProject.software_license,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Software License'
+                                                help={
+                                                    project_field_help.software_license
+                                                }
+                                            />
+                                            {selectedProject.software_license}
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(
+                                        selectedProject.data_license,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Data License'
+                                                help={
+                                                    project_field_help.data_license
+                                                }
+                                            />
+                                            {selectedProject.data_license}
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(
+                                        selectedProject.lead_maintainer,
+                                    ) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Lead Maintainer(s)'
+                                                help={
+                                                    project_field_help.lead_maintainer
+                                                }
+                                            />
+                                            <ul
+                                                className={
+                                                    styles.maintainerList
+                                                }
+                                            >
+                                                {selectedProject.lead_maintainer.map(
+                                                    (url, idx) => (
+                                                        <li key={idx}>
+                                                            <a
+                                                                href={url}
+                                                                target='_blank'
+                                                                rel='noopener noreferrer'
+                                                                className={
+                                                                    styles.modalLinkUrl
+                                                                }
+                                                            >
+                                                                {url}
+                                                            </a>
+                                                        </li>
+                                                    ),
+                                                )}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                    {isUsableValue(selectedProject.notes) && (
+                                        <div className={styles.modalLinks01}>
+                                            <FieldLabelHelpCard
+                                                label='Notes'
+                                                help={project_field_help.notes}
+                                            />
+                                            {selectedProject.notes}
                                         </div>
                                     )}
                                 </div>
