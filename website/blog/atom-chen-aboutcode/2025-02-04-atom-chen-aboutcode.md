@@ -23,7 +23,7 @@ lead maintainer of atom and chen, founder of AppThreat, and creator of other
 open source  supply chain security tools like [OWASP CycloneDX Generator
 (cdxgen)](https://github.com/CycloneDX/cdxgen),
 [OWASP blint](https://github.com/owasp-dep-scan/blint), and
- [OWASP depscan](https://owasp.org/www-project-dep-scan/).
+ [OWASP depscan](https://owasp.org/www-project-dep-scan/).  <!-- truncate -->
 
 While working on a different problem, Prabhu uncovered a lack of high-quality
 code hierarchy analysis libraries and CLI tools. atom and chen were built as

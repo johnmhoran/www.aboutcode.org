@@ -18,7 +18,7 @@ Until now, these contexts have been considered as separate domains:
 
 - Security tools check if resolved package versions are affected by known vulnerabilities (even when integrated in a package management tool)
 
-As a result, the typical approach to get a non-vulnerable dependency tree is:
+As a result, the typical approach to get a non-vulnerable dependency tree is: <!-- truncate -->
 
 1. Resolve a dependency tree and install the resolved package versions.
 

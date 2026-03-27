@@ -19,7 +19,7 @@ What does “Dual” mean in this context? In a practical sense, it means you ha
 - Which version of BSD?
 - And which version of GPL?
 
-Typically, but not always, this example statement means that you have a choice of BSD-3-Clause OR GPL 2.0 or later because these are the most common versions of those licenses. As the consumer of the software project you must conclude that interpretation and choice, usually after exploring the other license notices in the project files. You must declare that choice in the attribution of your project(s) or product(s) that use that software.
+Typically, but not always, this example statement means that you have a choice of BSD-3-Clause OR GPL 2.0 or later because these are the most common versions of those licenses. As the consumer of the software project you must conclude that interpretation and choice, usually after exploring the other license notices in the project files. You must declare that choice in the attribution of your project(s) or product(s) that use that software.  <!-- truncate -->
 
 But doesn’t “Dual” mean “consisting of two parts”? Well, yes, that is true in standard English usage, but in the historical practice of many open source projects, this term is ambiguously applied. This wreaks havoc on license detection programs, and creates more busy-work for anyone wanting to use the “Dual-licensed” software.
 

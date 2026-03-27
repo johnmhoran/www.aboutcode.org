@@ -14,7 +14,7 @@ The AboutCode team is planning to deprecate the V1 and V2 API of VulnerableCode 
 
 ## Why this new API
 
-The existing V1 and V2 APIs are both based on the “vulnerabilities” model, designed to aggregate information from multiple advisory sources based on identifiers and aliases. With the "vulnerabilities" model it is difficult to determine which source is correct because of the combination of sources. This may result in data from one source overwriting data from another source.
+The existing V1 and V2 APIs are both based on the “vulnerabilities” model, designed to aggregate information from multiple advisory sources based on identifiers and aliases. With the "vulnerabilities" model it is difficult to determine which source is correct because of the combination of sources. This may result in data from one source overwriting data from another source.  <!-- truncate -->
 
 ---
 
@@ -32,20 +32,20 @@ The new “advisories” model introduces an Advisory ID (AVID) for each advisor
 
 We are planning to complete the following tasks by the end of January 2026:
 
-- Redesigning the API and UI  
-- Migrating our existing data sources  
-- Documenting the V3 API and the new UI  
+- Redesigning the API and UI
+- Migrating our existing data sources
+- Documenting the V3 API and the new UI
 
 ---
 
 ## Current Status
 
-https://public2.vulnerablecode.io/v2 uses the new advisory based UI 
+https://public2.vulnerablecode.io/v2 uses the new advisory based UI
 https://public2.vulnerablecode.io/api/v3/ uses new API, but it is still under development and not ready for production use.
 
 ---
 
 ## Migration Progress
 
-You can track the progress of migration here:  
+You can track the progress of migration here:
 https://github.com/orgs/aboutcode-org/projects/52/views/48
