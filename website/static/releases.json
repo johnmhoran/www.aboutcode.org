@@ -1,5 +1,18 @@
 [
   {
+    "repo": "v38.0.0",
+    "repo_slug": "aboutcode-org/vulnerablecode",
+    "repo_url": "https://github.com/aboutcode-org/vulnerablecode",
+    "tag": "v38.0.0",
+    "tag_url": "https://github.com/aboutcode-org/vulnerablecode/releases/tag/v38.0.0",
+    "published_at": "2026-04-02T06:39:13Z",
+    "releases_page_url": "https://github.com/aboutcode-org/vulnerablecode/releases",
+    "compare_url": "https://github.com/aboutcode-org/vulnerablecode/compare/v38.0.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v1.15.1",
     "repo_slug": "aboutcode-org/purlvalidator-go",
     "repo_url": "https://github.com/aboutcode-org/purlvalidator-go",
@@ -60,19 +73,6 @@
     "published_at": "2026-03-11T23:16:36Z",
     "releases_page_url": "https://github.com/aboutcode-org/dejacode/releases",
     "compare_url": "https://github.com/aboutcode-org/dejacode/compare/v5.7.0...main",
-    "commits_since": 0,
-    "prerelease": false,
-    "author": "github-actions[bot]"
-  },
-  {
-    "repo": "v37.0.0",
-    "repo_slug": "aboutcode-org/vulnerablecode",
-    "repo_url": "https://github.com/aboutcode-org/vulnerablecode",
-    "tag": "v37.0.0",
-    "tag_url": "https://github.com/aboutcode-org/vulnerablecode/releases/tag/v37.0.0",
-    "published_at": "2026-03-04T14:30:07Z",
-    "releases_page_url": "https://github.com/aboutcode-org/vulnerablecode/releases",
-    "compare_url": "https://github.com/aboutcode-org/vulnerablecode/compare/v37.0.0...main",
     "commits_since": 0,
     "prerelease": false,
     "author": "github-actions[bot]"
