@@ -1,5 +1,18 @@
 [
   {
+    "repo": "v1.15.2",
+    "repo_slug": "aboutcode-org/purlvalidator-go",
+    "repo_url": "https://github.com/aboutcode-org/purlvalidator-go",
+    "tag": "v1.15.2",
+    "tag_url": "https://github.com/aboutcode-org/purlvalidator-go/releases/tag/v1.15.2",
+    "published_at": "2026-04-03T01:47:42Z",
+    "releases_page_url": "https://github.com/aboutcode-org/purlvalidator-go/releases",
+    "compare_url": "https://github.com/aboutcode-org/purlvalidator-go/compare/v1.15.2...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v38.0.0",
     "repo_slug": "aboutcode-org/vulnerablecode",
     "repo_url": "https://github.com/aboutcode-org/vulnerablecode",
@@ -8,19 +21,6 @@
     "published_at": "2026-04-02T06:39:13Z",
     "releases_page_url": "https://github.com/aboutcode-org/vulnerablecode/releases",
     "compare_url": "https://github.com/aboutcode-org/vulnerablecode/compare/v38.0.0...main",
-    "commits_since": 0,
-    "prerelease": false,
-    "author": "github-actions[bot]"
-  },
-  {
-    "repo": "v1.15.1",
-    "repo_slug": "aboutcode-org/purlvalidator-go",
-    "repo_url": "https://github.com/aboutcode-org/purlvalidator-go",
-    "tag": "v1.15.1",
-    "tag_url": "https://github.com/aboutcode-org/purlvalidator-go/releases/tag/v1.15.1",
-    "published_at": "2026-04-02T01:49:58Z",
-    "releases_page_url": "https://github.com/aboutcode-org/purlvalidator-go/releases",
-    "compare_url": "https://github.com/aboutcode-org/purlvalidator-go/compare/v1.15.1...main",
     "commits_since": 0,
     "prerelease": false,
     "author": "github-actions[bot]"
