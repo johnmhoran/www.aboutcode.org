@@ -11,7 +11,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -25,7 +26,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -39,7 +41,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -53,7 +56,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra"]
+        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -67,7 +71,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["https://github.com/JonoYang"]
+        "lead_maintainer": ["https://github.com/JonoYang"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -81,7 +86,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["https://github.com/JonoYang"]
+        "lead_maintainer": ["https://github.com/JonoYang"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -95,7 +101,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra"]
+        "lead_maintainer": ["https://github.com/AyanSinhaMahapatra"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -109,7 +116,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -123,7 +131,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -137,7 +146,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -151,7 +161,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -165,7 +176,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -179,7 +191,8 @@
         "software_license": "Apache-2.0",
         "data_license": "Not applicable",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     },
     {
         "group": "libraries",
@@ -193,6 +206,7 @@
         "software_license": "Apache-2.0",
         "data_license": "Not",
         "platform": "Python",
-        "lead_maintainer": ["Not applicable"]
+        "lead_maintainer": ["Not applicable"],
+        "notes": "Not applicable"
     }
 ]

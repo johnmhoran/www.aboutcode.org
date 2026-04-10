@@ -12,7 +12,7 @@ Accurately identify third-party software packages with PURL.
 
 If you need to generate (or consume) Software Bill of Materials (SBOMs), then you need a standardized way to communicate information about what components are in your software.
 
-If you’re using or building applications, you need tools to determine if there are any known security issues with open source and third-party components.
+If you’re using or building applications, you need tools to determine if there are any known security issues with open source and third-party components.  <!-- truncate -->
 
 If you’re building tools for Software Composition Analysis (SCA) like analyzing the origin, license, security, and quality of the code across different ecosystems. You need a simple way to identify the packages used.
 

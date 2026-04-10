@@ -553,6 +553,10 @@
     margin-bottom: 0px;
 }
 
+.maintainerList {
+    margin-bottom: 0px;
+}
+
 /* 2026-01-20 Tuesday 11:56:12.  Field tooltip */
 .fieldLabelWrapper {
     display: inline-flex;
