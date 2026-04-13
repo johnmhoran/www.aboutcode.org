@@ -51,6 +51,9 @@ jobs:
           - aboutcode-org/www.aboutcode.org
           # Add more repos here
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.GH_REPO_POLLING }}
+
     steps:
       # 1 Checkout the target repo (Repo B)
       - name: Checkout repository
@@ -58,6 +61,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+          token: ${{ secrets.GH_REPO_POLLING }}
 
       # 2 Debug: show which repo is being processed
       - name: Debug - current repo
