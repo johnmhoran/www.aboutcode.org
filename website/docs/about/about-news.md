@@ -1,5 +1,8 @@
 # News
 Stay up to date with the latest news from the AboutCode community.
+## OSI and AboutCode announce three-year roadmap for ClearlyDefined's technical foundation
+*   **Date**: April 14, 2026
+*   **Details**: The Clearly Defined project has published a three-year [roadmap](https://docs.clearlydefined.io/docs/resources/roadmap) developed by AboutCode in collaboration with the community to strengthen ClearlyDefined’s technical foundations, expand its capabilities, and grow its global adoption.
 
 ## OSI and AboutCode collaborate to ensure the long-term sustainability, growth, and impact of ClearlyDefined
 *   **Date**: February 2, 2026
