@@ -13,14 +13,14 @@
     "author": "github-actions[bot]"
   },
   {
-    "repo": "v38.5.0",
+    "repo": "v38.6.0",
     "repo_slug": "aboutcode-org/vulnerablecode",
     "repo_url": "https://github.com/aboutcode-org/vulnerablecode",
-    "tag": "v38.5.0",
-    "tag_url": "https://github.com/aboutcode-org/vulnerablecode/releases/tag/v38.5.0",
-    "published_at": "2026-04-24T12:21:14Z",
+    "tag": "v38.6.0",
+    "tag_url": "https://github.com/aboutcode-org/vulnerablecode/releases/tag/v38.6.0",
+    "published_at": "2026-04-30T18:36:27Z",
     "releases_page_url": "https://github.com/aboutcode-org/vulnerablecode/releases",
-    "compare_url": "https://github.com/aboutcode-org/vulnerablecode/compare/v38.5.0...main",
+    "compare_url": "https://github.com/aboutcode-org/vulnerablecode/compare/v38.6.0...main",
     "commits_since": 0,
     "prerelease": false,
     "author": "github-actions[bot]"
