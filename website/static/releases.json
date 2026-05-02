@@ -13,6 +13,19 @@
     "author": "github-actions[bot]"
   },
   {
+    "repo": "v32.0.1",
+    "repo_slug": "aboutcode-org/univers",
+    "repo_url": "https://github.com/aboutcode-org/univers",
+    "tag": "v32.0.1",
+    "tag_url": "https://github.com/aboutcode-org/univers/releases/tag/v32.0.1",
+    "published_at": "2026-05-01T16:39:54Z",
+    "releases_page_url": "https://github.com/aboutcode-org/univers/releases",
+    "compare_url": "https://github.com/aboutcode-org/univers/compare/v32.0.1...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "github-actions[bot]"
+  },
+  {
     "repo": "v38.6.0",
     "repo_slug": "aboutcode-org/vulnerablecode",
     "repo_url": "https://github.com/aboutcode-org/vulnerablecode",
@@ -167,19 +180,6 @@
     "commits_since": 0,
     "prerelease": false,
     "author": "JonoYang"
-  },
-  {
-    "repo": "v31.1.0",
-    "repo_slug": "aboutcode-org/univers",
-    "repo_url": "https://github.com/aboutcode-org/univers",
-    "tag": "v31.1.0",
-    "tag_url": "https://github.com/aboutcode-org/univers/releases/tag/v31.1.0",
-    "published_at": "2025-09-11T13:33:56Z",
-    "releases_page_url": "https://github.com/aboutcode-org/univers/releases",
-    "compare_url": "https://github.com/aboutcode-org/univers/compare/v31.1.0...main",
-    "commits_since": 0,
-    "prerelease": false,
-    "author": "keshav-space"
   },
   {
     "repo": "v30.4.4",
