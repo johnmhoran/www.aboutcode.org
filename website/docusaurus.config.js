@@ -26,7 +26,8 @@ const siteConfig = {
         baseUrl: '/www.aboutcode.org/',
     },
     dreamhost: {
-        url: 'https://www.aboutcode.org',
+        // url: 'https://www.aboutcode.org',
+        url: 'https://aboutcode.org',
         baseUrl: '/',
     },
 };
@@ -73,7 +74,9 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    sidebarPath: './sidebars.js',
+                    // sidebarPath: './sidebars.js',
+                    // 2026-05-05 15:57:26 (PT) Tuesday.  Does this address the link errors?
+                    sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     // editUrl:
@@ -144,27 +147,27 @@ const config = {
                 style: 'dark',
                 links: [
                     {
-                        html: `<img src="/www.aboutcode.org/img/AboutCode.svg" alt="My Company" width="150"/>`,
+                        html: `<img src="/img/AboutCode.svg" alt="AboutCode.org" width="150"/>`,
                     },
 
                     {
-                        html: `<a href="https://github.com/aboutcode-org" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/www.aboutcode.org/img/github-mark-white.svg" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://github.com/aboutcode-org" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/img/github-mark-white.svg" alt="" width="20" height="20"></a>`,
                     },
 
                     {
-                        html: `<a href="https://www.linkedin.com/company/aboutcode/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="/www.aboutcode.org/img/brand-inlogo-download-fg-dsk-v01-2x.png" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://www.linkedin.com/company/aboutcode/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="/img/brand-inlogo-download-fg-dsk-v01-2x.png" alt="" width="20" height="20"></a>`,
                     },
 
                     {
-                        html: `<a href="https://join.slack.com/t/aboutcode-org/shared_invite/zt-1paqwxccw-IuafuiAvYJFkTqGaZsC1og" target="_blank" rel="noopener noreferrer" aria-label="Slack"><img src="/www.aboutcode.org/img/slack-logo.svg" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://join.slack.com/t/aboutcode-org/shared_invite/zt-1paqwxccw-IuafuiAvYJFkTqGaZsC1og" target="_blank" rel="noopener noreferrer" aria-label="Slack"><img src="/img/slack-logo.svg" alt="" width="20" height="20"></a>`,
                     },
 
                     {
-                        html: `<a href="https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im" target="_blank" rel="noopener noreferrer" aria-label="Gitter"><img src="/www.aboutcode.org/img/gitter.svg" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im" target="_blank" rel="noopener noreferrer" aria-label="Gitter"><img src="/img/gitter.svg" alt="" width="20" height="20"></a>`,
                     },
 
                     {
-                        html: `<a href="mailto:hello@aboutcode.org" target="_blank" rel="noopener noreferrer" aria-label="Email"><img src="/www.aboutcode.org/img/email-svgrepo-com.svg" alt="" width="25" height="20"></a>`,
+                        html: `<a href="mailto:hello@aboutcode.org" target="_blank" rel="noopener noreferrer" aria-label="Email"><img src="/img/email-svgrepo-com.svg" alt="" width="25" height="20"></a>`,
                     },
 
                     { label: 'Privacy Policy', to: '/privacy' },
