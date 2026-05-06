@@ -32,6 +32,9 @@ const siteConfig = {
     },
 };
 
+// Define const for the footer icon paths.
+const currentBaseUrl = siteConfig[deployTarget].baseUrl
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'AboutCode.org',
@@ -147,27 +150,27 @@ const config = {
                 style: 'dark',
                 links: [
                     {
-                        html: `<img src="/img/AboutCode.svg" alt="AboutCode.org" width="150"/>`,
+                        html: `<img src="${currentBaseUrl}img/AboutCode.svg" alt="AboutCode.org" width="150"/>`,
                     },
 
                     {
-                        html: `<a href="https://github.com/aboutcode-org" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/img/github-mark-white.svg" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://github.com/aboutcode-org" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="${currentBaseUrl}img/github-mark-white.svg" alt="" width="20" height="20"></a>`,
                     },
 
                     {
-                        html: `<a href="https://www.linkedin.com/company/aboutcode/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="/img/brand-inlogo-download-fg-dsk-v01-2x.png" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://www.linkedin.com/company/aboutcode/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="${currentBaseUrl}img/brand-inlogo-download-fg-dsk-v01-2x.png" alt="" width="20" height="20"></a>`,
                     },
 
                     {
-                        html: `<a href="https://join.slack.com/t/aboutcode-org/shared_invite/zt-1paqwxccw-IuafuiAvYJFkTqGaZsC1og" target="_blank" rel="noopener noreferrer" aria-label="Slack"><img src="/img/slack-logo.svg" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://join.slack.com/t/aboutcode-org/shared_invite/zt-1paqwxccw-IuafuiAvYJFkTqGaZsC1og" target="_blank" rel="noopener noreferrer" aria-label="Slack"><img src="${currentBaseUrl}img/slack-logo.svg" alt="" width="20" height="20"></a>`,
                     },
 
                     {
-                        html: `<a href="https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im" target="_blank" rel="noopener noreferrer" aria-label="Gitter"><img src="/img/gitter.svg" alt="" width="20" height="20"></a>`,
+                        html: `<a href="https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im" target="_blank" rel="noopener noreferrer" aria-label="Gitter"><img src="${currentBaseUrl}img/gitter.svg" alt="" width="20" height="20"></a>`,
                     },
 
                     {
-                        html: `<a href="mailto:hello@aboutcode.org" target="_blank" rel="noopener noreferrer" aria-label="Email"><img src="/img/email-svgrepo-com.svg" alt="" width="25" height="20"></a>`,
+                        html: `<a href="mailto:hello@aboutcode.org" target="_blank" rel="noopener noreferrer" aria-label="Email"><img src="${currentBaseUrl}img/email-svgrepo-com.svg" alt="" width="25" height="20"></a>`,
                     },
 
                     { label: 'Privacy Policy', to: '/privacy' },
