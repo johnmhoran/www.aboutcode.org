@@ -1,5 +1,18 @@
 [
   {
+    "repo": "v0.10.0",
+    "repo_slug": "aboutcode-org/nuget-inspector",
+    "repo_url": "https://github.com/aboutcode-org/nuget-inspector",
+    "tag": "v0.10.0",
+    "tag_url": "https://github.com/aboutcode-org/nuget-inspector/releases/tag/v0.10.0",
+    "published_at": "2026-05-07T22:16:53Z",
+    "releases_page_url": "https://github.com/aboutcode-org/nuget-inspector/releases",
+    "compare_url": "https://github.com/aboutcode-org/nuget-inspector/compare/v0.10.0...main",
+    "commits_since": 0,
+    "prerelease": false,
+    "author": "pombredanne"
+  },
+  {
     "repo": "v1.15.36",
     "repo_slug": "aboutcode-org/purlvalidator-go",
     "repo_url": "https://github.com/aboutcode-org/purlvalidator-go",
@@ -388,19 +401,6 @@
     "commits_since": 0,
     "prerelease": false,
     "author": "JonoYang"
-  },
-  {
-    "repo": "v0.9.12",
-    "repo_slug": "aboutcode-org/nuget-inspector",
-    "repo_url": "https://github.com/aboutcode-org/nuget-inspector",
-    "tag": "v0.9.12",
-    "tag_url": "https://github.com/aboutcode-org/nuget-inspector/releases/tag/v0.9.12",
-    "published_at": "2023-04-19T22:26:48Z",
-    "releases_page_url": "https://github.com/aboutcode-org/nuget-inspector/releases",
-    "compare_url": "https://github.com/aboutcode-org/nuget-inspector/compare/v0.9.12...main",
-    "commits_since": 0,
-    "prerelease": false,
-    "author": "pombredanne"
   },
   {
     "repo": "Release v31.0.0",
