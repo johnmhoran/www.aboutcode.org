@@ -15,11 +15,11 @@ Join our community meetings to discuss AboutCode projects, ask questions, and co
 *   **Where**: https://meet.jit.si/AboutCode
 
 ## Bi-weekly PURL Community Meeting
-*   **When**: Wednesdays at 17:00 UTC - every two weeks starting January 7
+*   **When**: Wednesdays at 16:00 UTC - See the date for the next meeting at the [Ecma TC54 Package-URL](https://tc54.org/purl/) site.
 *   **Topic**: Discussion of the [PURL](https://github.com/package-url/purl-spec)
 and [VERS](https://github.com/package-url/vers-spec) specifications and 
 related projects
-*   **Where**: https://meet.google.com/ryq-aimn-ghd 
+*   **Where**: https://meet.google.com/ryq-aimn-ghd
 
 ## Join the Conversation
 
